@@ -13,5 +13,12 @@ import com.distributedsystems.model.Application;
 
 @Repository
 public interface ApplicationRepository extends JpaRepository<Application, Long> {
-   public Application findById(int id);
+
+   //region Basic CRUD operations
+    Application findById(int id);
+
+    List<Application> findAll();
+
+
+   //endregion
 }

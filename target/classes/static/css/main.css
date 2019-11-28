@@ -259,6 +259,10 @@ nav .navbar-nav li a:hover{
     transition: all 0.1s;
 }
 
+input[type=checkbox][disabled]{
+    outline:1px solid black; // or whatever
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */

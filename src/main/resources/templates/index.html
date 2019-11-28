@@ -6,14 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script src="https://kit.fontawesome.com/2a9be2991c.js" crossorigin="anonymous"></script>
-    <link th:href="@{/css/main.css}" href="main.css" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/main.css}" rel="stylesheet" type="text/css"/>
+    <title>Distributed Systems Assignment</title>
+    <lang>el</lang>
+
     <link rel="stylesheet" type="text/css"
           th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
     <script type="text/javascript"
             th:src="@{/webjars/jquery/jquery.min.js/}"></script>
     <script type="text/javascript"
-            th:src="@{/webjars/bootstrap//js/bootstrap.min.js}"></script>
-
+            th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" th:src="@{/js/listapplications.js}"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -62,16 +67,25 @@
         <p>
             Welcome <span sec:authentication="principal.username">User</span>
         </p>
+        <div class="col-md-8">
+        <table id="example" class="display" style="width:100%">
+            <thead>
+            <tr>
+                <th>user_id</th>
+                <th>income</th>
+                <th>bothParentsUnemployed</th>
+                <th>hasSiblings</th>
+                <th>hasSiblingsInOtherCities</th>
+
+            </tr>
+            </thead>
+
+        </table>
+        </div>
     </div>
 </div>
 </body>
 <script>
-    $(document).ready(function () {
 
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar').toggleClass('active');
-        });
-
-    });
 </script>
 </html>
