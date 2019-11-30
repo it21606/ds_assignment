@@ -11,6 +11,7 @@ $(document).ready(function () {
             dataType: 'json',
             dataSrc: ''
         },
+        select: true,
         columns: [
             { data: 'user_id' },
             { data: 'income' },

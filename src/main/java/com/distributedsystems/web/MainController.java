@@ -12,6 +12,11 @@ public class MainController {
         return "index";
     }
 
+    @GetMapping("/listapplications")
+    public String userList() {
+        return "list-users";
+    }
+
     @GetMapping("/login")
     public String login(Model model) {
         return "login";
