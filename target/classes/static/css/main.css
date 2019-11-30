@@ -76,8 +76,8 @@ span {
 }
 
 #sidebar.active {
-    min-width: 80px;
-    max-width: 80px;
+    min-width: 95px;
+    max-width: 95px;
     text-align: center;
 }
 
@@ -168,6 +168,11 @@ span {
 a[aria-expanded="true"] {
     color: #fff;
     background: #6d7fcc;
+}
+
+a[aria-expanded="true"] {
+    color: #fff;
+    background-color: transparent !important;
 }
 
 a[data-toggle="collapse"] {

@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/list-users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/listapplications.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/listapplications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/listapplications.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/listapplications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration-login-springboot-security-thymeleaf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ds_assignment_hua.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/registration-login-springboot-security-thymeleaf.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,12 +46,19 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectId" id="1TlEayaxTp6yLI6WDsv2dQobFs2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="registration-login-springboot-security-thymeleaf" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -83,6 +90,11 @@
       <recent name="C:\Users\user\Desktop\registration-login-springboot-security-thymeleaf-master\src\main\resources\templates" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -102,7 +114,7 @@
   </component>
   <component name="RunManager" selected="Spring Boot.Application (1)">
     <configuration name="ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="registration-login-springboot-security-thymeleaf" />
+      <module name="ds_assignment_hua" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.distributedsystems.*" />
@@ -117,7 +129,7 @@
       </method>
     </configuration>
     <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="registration-login-springboot-security-thymeleaf" />
+      <module name="ds_assignment_hua" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.distributedsystems.Application" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -177,7 +189,8 @@
       <workItem from="1574883153393" duration="2514000" />
       <workItem from="1574967557767" duration="7962000" />
       <workItem from="1575050229487" duration="825000" />
-      <workItem from="1575107278275" duration="4476000" />
+      <workItem from="1575107278275" duration="4535000" />
+      <workItem from="1575136363519" duration="1756000" />
     </task>
     <task id="LOCAL-00001" summary="Changed readme">
       <created>1574885033668</created>
@@ -200,7 +213,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574978364721</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed some styling">
+      <created>1575115693096</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575115693096</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changed some styling">
+      <created>1575136546689</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575136546689</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +250,8 @@
     <MESSAGE value="Changed readme" />
     <MESSAGE value="Fixed json return" />
     <MESSAGE value="Fixed json return and added applications list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed json return and added applications list" />
+    <MESSAGE value="Changed some styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed some styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

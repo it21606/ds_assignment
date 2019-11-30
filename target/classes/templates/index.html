@@ -8,8 +8,6 @@
     <script src="https://kit.fontawesome.com/2a9be2991c.js" crossorigin="anonymous"></script>
     <link th:href="@{/css/main.css}" rel="stylesheet" type="text/css"/>
     <title>Distributed Systems Assignment</title>
-    <lang>el</lang>
-
     <link rel="stylesheet" type="text/css"
           th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
     <script type="text/javascript"
@@ -32,23 +30,9 @@
                 </button>
                 <div>
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Page</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Page</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Page</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Page</a>
-                        </li>
-                        <div class="topbar-divider d-none d-sm-block"></div>
-
                         <li class="">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span  sec:authentication="principal.username">User</span>
+                            <a class="nav-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Συνδεδεμένος ως:  <span  sec:authentication="principal.username">User</span>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div sec:authorize="isAuthenticated()" class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -62,11 +46,8 @@
                 </div>
             </div>
         </nav>
-        <h2>Feeding applications system @ harokopio</h2>
+        <h2>Σύστημα διαχείρισης αιτήσεων σίτησης</h2>
 
-        <p>
-            Welcome <span sec:authentication="principal.username">User</span>
-        </p>
         <div class="col-md-8">
         <table id="example" class="display" style="width:100%">
             <thead>
