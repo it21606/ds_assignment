@@ -1,7 +1,7 @@
     <nav id="sidebar" th:fragment="header" xmlns:th="http://www.thymeleaf.org">
         <div class="sidebar-header">
-            <img id="imagesmall" th:src="@{/img/logo.png}">
-            <img id="imagefull" th:src="@{/img/logobig.png}">
+            <img id="imagesmall" th:src="@{images/logo.png}">
+            <img id="imagefull" th:src="@{images/logobig.png}">
         </div>
 
         <ul class="list-unstyled components">
@@ -40,6 +40,9 @@
                     </li>
                     <li>
                         <a href="#">Διαχείριση χρηστών</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/adduser}">Προσθήκη χρήστη</a>
                     </li>
                 </ul>
             </li>

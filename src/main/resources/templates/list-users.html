@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script src="https://kit.fontawesome.com/2a9be2991c.js" crossorigin="anonymous"></script>
     <link th:href="@{/css/main.css}" rel="stylesheet" type="text/css"/>
-    <title>Distributed Systems Assignment</title>
-
+    <title>Σύστημα διαχείρισης αιτήσεων σίτησης</title>
     <link rel="stylesheet" type="text/css"
           th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
     <script type="text/javascript"
@@ -21,7 +20,7 @@
 </head>
 <body>
 <div class="wrapper">
-	<div th:replace="fragments/header :: header"/>
+    <div th:replace="fragments/header :: header"/>
     <div id="content">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -31,23 +30,9 @@
                 </button>
                 <div>
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Page</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Page</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Page</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Page</a>
-                        </li>
-                        <div class="topbar-divider d-none d-sm-block"></div>
-
                         <li class="">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span  sec:authentication="principal.username">User</span>
+                                Συνδεδεμένος ως:  <span  sec:authentication="principal.username">User</span>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div sec:authorize="isAuthenticated()" class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -61,25 +46,22 @@
                 </div>
             </div>
         </nav>
-        <h2>Feeding applications system @ harokopio</h2>
+        <h2>Σύστημα διαχείρισης αιτήσεων σίτησης</h2>
 
-        <p>
-            Welcome <span sec:authentication="principal.username">User</span>
-        </p>
         <div class="col-md-8">
-        <table id="example" class="display" style="width:100%">
-            <thead>
-            <tr>
-                <th>user_id</th>
-                <th>income</th>
-                <th>bothParentsUnemployed</th>
-                <th>hasSiblings</th>
-                <th>hasSiblingsInOtherCities</th>
+            <table id="example" class="display" style="width:100%">
+                <thead>
+                <tr>
+                    <th>user_id</th>
+                    <th>income</th>
+                    <th>bothParentsUnemployed</th>
+                    <th>hasSiblings</th>
+                    <th>hasSiblingsInOtherCities</th>
 
-            </tr>
-            </thead>
+                </tr>
+                </thead>
 
-        </table>
+            </table>
         </div>
     </div>
 </div>

@@ -7,7 +7,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
 }
-
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
@@ -70,7 +69,7 @@ span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
+    background: #1b4275;
     color: #fff;
     transition: all 0.1s;
 }
@@ -108,6 +107,7 @@ span {
     text-align: center;
     font-size: 0.85em;
     text-decoration: none;
+
 }
 
 #sidebar.active ul li a i {
@@ -134,7 +134,7 @@ span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #2f598f;
 }
 
 #sidebar .sidebar-header strong {
@@ -155,7 +155,7 @@ span {
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #2f598f;
     background: #fff;
     text-decoration: none;
 }
@@ -167,7 +167,7 @@ span {
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #2f598f;
 }
 
 a[aria-expanded="true"] {
@@ -216,7 +216,7 @@ img{
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #2f598f;
 }
 
 ul.CTAs {

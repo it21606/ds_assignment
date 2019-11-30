@@ -16,7 +16,7 @@ import com.distributedsystems.model.User;
 import com.distributedsystems.web.dto.UserRegistrationDto;
 
 @Controller
-@RequestMapping("/registration")
+@RequestMapping("/adduser")
 public class UserRegistrationController {
 
     @Autowired
@@ -29,7 +29,7 @@ public class UserRegistrationController {
 
     @GetMapping
     public String showRegistrationForm(Model model) {
-        return "registration";
+        return "adduser";
     }
 
     @PostMapping
@@ -38,15 +38,15 @@ public class UserRegistrationController {
 
         User existing = userService.findByEmail(userDto.getEmail());
         if (existing != null){
-            result.rejectValue("email", null, "There is already an account registered with that email");
+            result.rejectValue("email", null, "Υπάρχει ήδη χρήστης στο σύστημα με το email" + userDto.getEmail());
         }
 
         if (result.hasErrors()){
-            return "registration";
+            return "adduser";
         }
 
         userService.save(userDto);
-        return "redirect:/registration?success";
+        return "redirect:/adduser?success";
     }
 
 }

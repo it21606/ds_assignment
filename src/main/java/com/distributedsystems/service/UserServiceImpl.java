@@ -2,8 +2,10 @@ package com.distributedsystems.service;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
+import com.distributedsystems.repository.RoleRepository;
 import com.distributedsystems.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -24,6 +26,9 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
     @Autowired
+    private RoleRepository roleRepository;
+
+    @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
     public User findByEmail(String email){
@@ -36,7 +41,12 @@ public class UserServiceImpl implements UserService {
         user.setLastName(registration.getLastName());
         user.setEmail(registration.getEmail());
         user.setPassword(passwordEncoder.encode(registration.getPassword()));
-        user.setRoles(Arrays.asList(new Role("ROLE_USER")));
+        Role initialRole = roleRepository.findByName("ROLE_USER");
+        if(initialRole != null) {
+            user.setRoles(Arrays.asList(initialRole));
+        }else{
+            user.setRoles(Arrays.asList(new Role("ROLE_USER")));
+        }
         return userRepository.save(user);
     }
 
@@ -44,7 +54,7 @@ public class UserServiceImpl implements UserService {
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         User user = userRepository.findByEmail(email);
         if (user == null){
-            throw new UsernameNotFoundException("Invalid username or password.");
+            throw new UsernameNotFoundException("Λάνθασμένα στοιχεία σύνδεσης.");
         }
         return new org.springframework.security.core.userdetails.User(user.getEmail(),
                 user.getPassword(),
