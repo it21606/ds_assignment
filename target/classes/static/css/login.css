@@ -9,10 +9,17 @@ body {
     border-radius: 0 !important;
 
 }
-.jumbotron p{
+.jumbotron p,a{
     color: #FFFFFF !important;
-    text-decoration:none;
-    /*background-color:none !important;*/
+    text-decoration:none !important;
+    background-size:cover;
+}
+
+img{
+    padding: 0;
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 a{
@@ -93,16 +100,6 @@ a{
 
 .form-label-group input::placeholder {
     color: transparent;
-}
-
-.btn-google {
-    color: white;
-    background-color: #ea4335;
-}
-
-.btn-facebook {
-    color: white;
-    background-color: #3b5998;
 }
 
 /* Fallback for Edge

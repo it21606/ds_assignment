@@ -118,6 +118,15 @@ span {
 
 }
 
+.info-text{
+    margin: 1px !important;
+    color: #495057 !important;
+}
+
+.info-text a{
+    color: #495057 !important;
+}
+
 #sidebar.active ul ul a {
     padding: 10px !important;
     outline: none;

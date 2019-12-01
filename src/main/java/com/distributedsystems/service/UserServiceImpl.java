@@ -1,12 +1,11 @@
 package com.distributedsystems.service;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import com.distributedsystems.repository.RoleRepository;
 import com.distributedsystems.repository.UserRepository;
+import com.distributedsystems.web.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -34,6 +33,27 @@ public class UserServiceImpl implements UserService {
     public User findByEmail(String email){
         return userRepository.findByEmail(email);
     }
+
+    public List<UserDto> findAll(){
+
+        List<User>  users = userRepository.findAll();
+        List<UserDto> userDtos= new ArrayList<UserDto>();
+        for (User user: users) {
+            UserDto mappedUser = Map(user);
+            userDtos.add(mappedUser);
+        }
+
+        return userDtos;
+    }
+
+    public UserDto findByEmailUserDto(String email){
+
+        User user = userRepository.findByEmail(email);
+        UserDto userDto= Map(user);
+
+        return userDto;
+    }
+
 
     public User save(UserRegistrationDto registration){
         User user = new User();
@@ -66,4 +86,18 @@ public class UserServiceImpl implements UserService {
                 .map(role -> new SimpleGrantedAuthority(role.getName()))
                 .collect(Collectors.toList());
     }
+
+    //region Mapping
+    private UserDto Map(User user){
+        UserDto userDto = new UserDto();
+        if(user != null) {
+            userDto.setFirstName(user.getFirstName());
+            userDto.setLastName(user.getLastName());
+            userDto.setEmail(user.getEmail());
+            userDto.setRoles(user.getRoles());
+        }
+        return userDto;
+    }
+
+    //endregion
 }
