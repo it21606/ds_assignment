@@ -27,7 +27,7 @@ public class UsersController {
     public UserDto findByEmailUserDto(@PathVariable("email") String email, HttpServletRequest request) {
         UserDto user = _userService.findByEmailUserDto(email);
 
-        System.out.print("User from " + user.getFirstName() + " " + user.getLastName() + ": " + user);
+        System.out.print("User from " + user.getFullName() + ": " + user);
         return user;
 
     }

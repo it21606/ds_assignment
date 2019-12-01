@@ -1,8 +1,11 @@
 package com.distributedsystems.service;
 
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import com.distributedsystems.helpers.Helpers;
 import com.distributedsystems.repository.RoleRepository;
 import com.distributedsystems.repository.UserRepository;
 import com.distributedsystems.web.dto.UserDto;
@@ -23,6 +26,8 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
+
+    private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 
     @Autowired
     private RoleRepository roleRepository;
@@ -55,17 +60,31 @@ public class UserServiceImpl implements UserService {
     }
 
 
-    public User save(UserRegistrationDto registration){
+    public User save(UserRegistrationDto registration) {
         User user = new User();
         user.setFirstName(registration.getFirstName());
         user.setLastName(registration.getLastName());
         user.setEmail(registration.getEmail());
         user.setPassword(passwordEncoder.encode(registration.getPassword()));
-        Role initialRole = roleRepository.findByName("ROLE_USER");
-        if(initialRole != null) {
-            user.setRoles(Arrays.asList(initialRole));
+        user.setCategory(registration.getCategory());
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        user.setMemberSince(sdf.format(timestamp));
+        user.setPhoneNumber(registration.getPhoneNumber());
+        boolean isAdmin = registration.getCategory().contains("Υπάλληλος");
+        if(isAdmin) {
+            Role initialRole = roleRepository.findByName("ROLE_ADMIN");
+            if (initialRole != null) {
+                user.setRoles(Arrays.asList(initialRole));
+            } else {
+                user.setRoles(Arrays.asList(new Role("ROLE_ADMIN")));
+            }
         }else{
-            user.setRoles(Arrays.asList(new Role("ROLE_USER")));
+            Role initialRole = roleRepository.findByName("ROLE_USER");
+            if (initialRole != null) {
+                user.setRoles(Arrays.asList(initialRole));
+            } else {
+                user.setRoles(Arrays.asList(new Role("ROLE_USER")));
+            }
         }
         return userRepository.save(user);
     }
@@ -95,6 +114,10 @@ public class UserServiceImpl implements UserService {
             userDto.setLastName(user.getLastName());
             userDto.setEmail(user.getEmail());
             userDto.setRoles(user.getRoles());
+            userDto.setCategory(user.getCategory());
+            userDto.setPhoneNumber(user.getPhoneNumber());
+            userDto.setMemberSince(user.getMemberSince());
+            userDto.setStatus(Helpers.userStatusMap.get(user.getStatus()));
         }
         return userDto;
     }

@@ -12,7 +12,7 @@ public class MainController {
         return "index";
     }
 
-    @GetMapping("/listapplications")
+    @GetMapping("/listusers")
     public String userList() {
         return "list-users";
     }

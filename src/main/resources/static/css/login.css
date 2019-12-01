@@ -27,6 +27,11 @@ a{
     text-decoration:none;
 }
 
+.my-5{
+    margin-bottom: 3rem !important;
+    margin-top: 0rem !important;
+}
+
 
 .card-signin {
     border: 0;

@@ -6,6 +6,8 @@ import javax.validation.constraints.NotEmpty;
 
 import com.distributedsystems.constraint.FieldMatch;
 
+import java.sql.Timestamp;
+
 @FieldMatch.List({
         @FieldMatch(first = "password", second = "confirmPassword", message = "The password fields must match"),
         @FieldMatch(first = "email", second = "confirmEmail", message = "The email fields must match")
@@ -27,6 +29,13 @@ public class UserRegistrationDto {
     @Email
     @NotEmpty
     private String email;
+
+    @NotEmpty
+    private String category;
+
+
+    private String phoneNumber;
+
 
     @Email
     @NotEmpty
@@ -80,4 +89,19 @@ public class UserRegistrationDto {
         this.confirmEmail = confirmEmail;
     }
 
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 }

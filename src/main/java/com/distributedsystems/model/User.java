@@ -1,6 +1,8 @@
 package com.distributedsystems.model;
 
 import javax.persistence.*;
+import java.sql.Time;
+import java.sql.Timestamp;
 import java.util.Collection;
 
 @Entity
@@ -15,6 +17,11 @@ public class User {
     private String lastName;
     private String email;
     private String password;
+    private String category;
+    private String memberSince;
+    private String phoneNumber;
+    private String status;
+
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(
@@ -28,19 +35,27 @@ public class User {
     public User() {
     }
 
-    public User(String firstName, String lastName, String email, String password) {
+    public User(String firstName, String lastName, String email, String password, String category, String memberSince, String phoneNumber, String status) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.category = category;
+        this.memberSince = memberSince;
+        this.phoneNumber = phoneNumber;
+        this.status = status;
     }
 
-    public User(String firstName, String lastName, String email, String password, Collection<Role> roles) {
+    public User(String firstName, String lastName, String email, String password, Collection<Role> roles, String category, String memberSince, String phoneNumber, String status) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.roles = roles;
+        this.category = category;
+        this.memberSince = memberSince;
+        this.phoneNumber = phoneNumber;
+        this.status = status;
     }
 
     public Long getId() {
@@ -91,6 +106,38 @@ public class User {
         this.roles = roles;
     }
 
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getMemberSince() {
+        return memberSince;
+    }
+
+    public void setMemberSince(String memberSince) {
+        this.memberSince = memberSince;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -99,6 +146,9 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + "*********" + '\'' +
+                ", phonenumber='" + phoneNumber + '\'' +
+                ", category='" + category + '\'' +
+                ", status='" + status + '\'' +
                 ", roles=" + roles +
                 '}';
     }

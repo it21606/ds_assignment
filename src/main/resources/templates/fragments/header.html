@@ -1,4 +1,4 @@
-    <nav id="sidebar" th:fragment="header" xmlns:th="http://www.thymeleaf.org">
+    <nav id="sidebar" class="active" th:fragment="header" xmlns:th="http://www.thymeleaf.org">
         <div class="sidebar-header">
             <a th:href="@{/}"><img id="imagesmall" th:src="@{images/logo.png}">
             <a th:href="@{/}"><img id="imagefull" th:src="@{images/logobig.png}"></a>
@@ -39,7 +39,7 @@
                         <a th:href="@{/listapplications}">Διαχείριση αίτησεων</a>
                     </li>
                     <li>
-                        <a href="#">Διαχείριση χρηστών</a>
+                        <a th:href="@{/listusers}">Διαχείριση χρηστών</a>
                     </li>
                     <li>
                         <a th:href="@{/adduser}">Προσθήκη χρήστη</a>

@@ -2,33 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/UsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/helpers/Helpers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ds_assignment_hua.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ds_assignment_hua.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/dto/UserRegistrationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/dto/UserRegistrationDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/listapplications.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/listusers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/adduser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/adduser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/list-users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/list-users.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/UsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/dto/UserRegistrationDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/dto/UserRegistrationDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/img/logobig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/listapplications.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/adduser.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/adduser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/list-users.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/list-users.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +212,9 @@
       <workItem from="1575136363519" duration="2013000" />
       <workItem from="1575145231039" duration="8696000" />
       <workItem from="1575194437739" duration="119000" />
-      <workItem from="1575194736011" duration="5141000" />
+      <workItem from="1575194736011" duration="5197000" />
+      <workItem from="1575217018013" duration="868000" />
+      <workItem from="1575221637185" duration="5105000" />
     </task>
     <task id="LOCAL-00001" summary="Changed readme">
       <created>1574885033668</created>
@@ -260,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575153989262</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Contact page,user service">
+      <created>1575202385709</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575202385709</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,49 +299,78 @@
     <MESSAGE value="Changed some styling" />
     <MESSAGE value="Maven build" />
     <MESSAGE value="Template and code changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Template and code changes." />
+    <MESSAGE value="Contact page,user service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contact page,user service" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1575198905335">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1575225520361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1575198905335" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1575202335027">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1575225520361" />
+    <state x="580" y="114" key="CommitChangelistDialog2" timestamp="1575202384429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575202335027" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1575202335027">
+    <state x="580" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1575202384429" />
+    <state width="433" height="466" key="DebuggerActiveHint" timestamp="1575224622970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575202335027" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1575202335027">
+    <state width="433" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1575224622970" />
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1575226754987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575202335027" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1575202335027">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754987" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1575226754987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575202335027" />
-    <state width="1293" height="282" key="GridCell.Tab.1.bottom" timestamp="1575202335027">
+    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754987" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1575226754987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575202335027" />
-    <state width="1293" height="282" key="GridCell.Tab.1.center" timestamp="1575202335027">
+    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754987" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1575226754987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575202335027" />
-    <state width="1293" height="282" key="GridCell.Tab.1.left" timestamp="1575202335027">
+    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754987" />
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom" timestamp="1575226754988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575202335027" />
-    <state width="1293" height="282" key="GridCell.Tab.1.right" timestamp="1575202335027">
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754988" />
+    <state width="1293" height="282" key="GridCell.Tab.1.center" timestamp="1575226754988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575202335027" />
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575194736620">
+    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754988" />
+    <state width="1293" height="282" key="GridCell.Tab.1.left" timestamp="1575226754987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575194736620" />
+    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754987" />
+    <state width="1293" height="282" key="GridCell.Tab.1.right" timestamp="1575226754988">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754988" />
+    <state width="1293" height="282" key="GridCell.Tab.2.bottom" timestamp="1575224643441">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575224643441" />
+    <state width="1293" height="282" key="GridCell.Tab.2.center" timestamp="1575224643441">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575224643441" />
+    <state width="1293" height="282" key="GridCell.Tab.2.left" timestamp="1575224643440">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575224643440" />
+    <state width="1293" height="282" key="GridCell.Tab.2.right" timestamp="1575224643441">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575224643441" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1575202388394">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575202388394" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575221650461">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575221650461" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -340,9 +381,19 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/web/UserRegistrationController.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/web/UsersController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

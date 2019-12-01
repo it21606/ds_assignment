@@ -6,18 +6,19 @@ $(document).ready(function () {
 
     $('#example').DataTable( {
         ajax: {
-            url: '/api/all',
+            url: '/api/users/all',
             type: 'GET',
             dataType: 'json',
             dataSrc: ''
         },
         select: true,
         columns: [
-            { data: 'user_id' },
-            { data: 'income' },
-            { data: 'bothParentsUnemployed' , "render": checkbox},
-            { data: 'hasSiblings' , "render": checkbox},
-            { data: 'hasSiblingsInOtherCities', "render": checkbox }
+            { data: 'fullName' },
+            { data: 'email' },
+            { data: 'phoneNumber'},
+            { data: 'category'},
+            { data: 'memberSince'},
+            { data: 'status'}
 
         ]
     } );

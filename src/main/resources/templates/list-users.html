@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script src="https://kit.fontawesome.com/2a9be2991c.js" crossorigin="anonymous"></script>
     <link th:href="@{/css/main.css}" rel="stylesheet" type="text/css"/>
-    <title>Σύστημα διαχείρισης αιτήσεων σίτησης</title>
+    <title>Σύστημα ηλεκτρονικής υποβολής αιτήσεων σίτησης</title>
     <link rel="stylesheet" type="text/css"
           th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
     <script type="text/javascript"
@@ -16,7 +16,8 @@
             th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
-    <script type="text/javascript" charset="utf8" th:src="@{/js/listapplications.js}"></script>
+    <script type="text/javascript" charset="utf8" th:src="@{/js/listusers.js}"></script>
+    <script type="text/javascript" charset="utf8" th:src="@{/js/main.js}"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -46,18 +47,18 @@
                 </div>
             </div>
         </nav>
-        <h2>Σύστημα διαχείρισης αιτήσεων σίτισης</h2>
-
+        <h2>Λίστα χρηστών</h2>
+        <br>
         <div class="col-md-8">
             <table id="example" class="display" style="width:100%">
                 <thead>
                 <tr>
-                    <th>user_id</th>
-                    <th>income</th>
-                    <th>bothParentsUnemployed</th>
-                    <th>hasSiblings</th>
-                    <th>hasSiblingsInOtherCities</th>
-
+                    <th>Πλήρες όνομα</th>
+                    <th>Email</th>
+                    <th>Τηλέφωνο</th>
+                    <th>Κατηγορία</th>
+                    <th>Μέλος από</th>
+                    <th>Κατάσταση</th>
                 </tr>
                 </thead>
 
