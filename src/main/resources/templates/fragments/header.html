@@ -1,18 +1,19 @@
-    <nav id="sidebar" class="active" th:fragment="header" xmlns:th="http://www.thymeleaf.org">
-        <div class="sidebar-header">
-            <a th:href="@{/}"><img id="imagesmall" th:src="@{images/logo.png}">
-            <a th:href="@{/}"><img id="imagefull" th:src="@{images/logobig.png}"></a>
-        </div>
+<nav class="active" id="sidebar" th:fragment="header" xmlns:th="http://www.thymeleaf.org"
+>
+    <div class="sidebar-header">
+        <a th:href="@{/}"><img id="imagesmall" th:src="@{images/logo.png}"></a>
+        <a th:href="@{/}"><img id="imagefull" th:src="@{images/logobig.png}"></a>
+    </div>
 
-        <ul class="list-unstyled components">
-            <li class="">
-                <a th:href="@{/}" class="collapse list-unstyled">
-                    <i class="fas fa-home"></i>
-                    Αρχική
+    <ul class="list-unstyled components">
+        <li class="">
+            <a th:href="@{/}" class="collapse list-unstyled">
+                <i class="fas fa-home"></i>
+                Αρχική
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a th:href="@{/profile}">
                     <i class="fas fa-briefcase"></i>
                     Προφίλ Χρήστη
                 </a>

@@ -1,5 +1,6 @@
 package com.distributedsystems.config;
 
+import com.distributedsystems.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
@@ -10,9 +11,6 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-
-import com.distributedsystems.service.UserService;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -27,8 +25,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
                 .antMatchers("/resources/**").permitAll()
                 .antMatchers("classpath:/static/**",
-                            "/webjars/**").permitAll()
-                    .anyRequest().authenticated()
+                        "/webjars/**").permitAll()
+                .anyRequest().authenticated()
+                .antMatchers("/listusers").access("hasRole('ROLE_ADMIN')")
+                .antMatchers("/adduser").access("hasRole('ROLE_ADMIN')")
                 .and()
                     .formLogin()
                         .loginPage("/login")

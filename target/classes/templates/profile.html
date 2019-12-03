@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script src="https://kit.fontawesome.com/2a9be2991c.js" crossorigin="anonymous"></script>
     <link th:href="@{/css/main.css}" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/profile.css}" type="text/css"/>
     <title>Σύστημα ηλεκτρονικής υποβολής αιτήσεων σίτησης</title>
     <link rel="stylesheet" type="text/css"
           th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
@@ -56,16 +57,43 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title"><i class="fas fa-user fa-sm"></i> Προσωπικές πληροφορίες</h4>
+                        <h4 class="card-title"><i class="fas fa-user fa-sm"></i> Προσωπικά</h4>
                         <h6 class="text-muted card-subtitle mb-2">Πληροφορίες σχετικά με τα προσωπικά σας στοιχεία</h6>
-                        <p class="info-text">Πλήρες όνομα:</p>
-                        <input th:if="${currentUser.fullName != null}" th:value="${currentUser.fullName}" disabled></input>
-                        <p class="info-text">Email:</p>
-                        <div th:if="${currentUser.phoneNumber != null}" th:text="${currentUser.phoneNumber}"></div>
-                        <p class="info-text">Κατάσταση:</p>
-                        <div th:if="${currentUser.status != null}" th:text="${currentUser.status}"></div>
-                        <p class="info-text">Μέλος από:</p>
-                        <div th:if="${currentUser.memberSince != null}" th:text="${currentUser.memberSince}"></div>
+                        <div class="profile-user-info">
+                            <div class="profile-info-row">
+                                <div class="profile-info-name">Πλήρες όνομα:</div>
+                                <div class="profile-info-value bigwidth">
+                                    <div th:if="${currentUser.fullName != null}"
+                                         th:text="${currentUser.fullName}"></div>
+                                </div>
+                            </div>
+                            <div class="profile-info-row">
+                                <div class="profile-info-name">Email:</div>
+                                <div class="profile-info-value">
+                                    <div th:if="${currentUser.email != null}" th:text="${currentUser.email}"></div>
+                                </div>
+                            </div>
+                            <div class="profile-info-row">
+                                <div class="profile-info-name">Τηλέφωνο:</div>
+                                <div class="profile-info-value">
+                                    <div th:if="${currentUser.phoneNumber != null}"
+                                         th:text="${currentUser.phoneNumber}"></div>
+                                </div>
+                            </div>
+                            <div class="profile-info-row">
+                                <div class="profile-info-name">Κατάσταση:</div>
+                                <div class="profile-info-value">
+                                    <div th:if="${currentUser.status != null}" th:text="${currentUser.status}"></div>
+                                </div>
+                            </div>
+                            <div class="profile-info-row">
+                                <div class="profile-info-name">Μέλος από:</div>
+                                <div class="profile-info-value">
+                                    <div th:if="${currentUser.memberSince != null}"
+                                         th:text="${currentUser.memberSince}"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
