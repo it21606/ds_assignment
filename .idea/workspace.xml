@@ -2,37 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/helpers/Helpers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds_assignment_hua.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ds_assignment_hua.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/config/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/dto/UserRegistrationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/dto/UserRegistrationDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/listapplications.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/listusers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/adduser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/adduser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/list-users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/list-users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/config/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/config/SecurityConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/UsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/dto/UserRegistrationDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/dto/UserRegistrationDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/listapplications.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/adduser.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/adduser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/list-users.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/list-users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,6 +75,9 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
@@ -104,17 +85,18 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.distributedsystems.repository" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\templates" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\static\images" />
       <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\templates" />
       <recent name="C:\Users\user\Desktop\registration-login-springboot-security-thymeleaf-master\src\main\resources\static" />
       <recent name="C:\Users\user\Desktop\registration-login-springboot-security-thymeleaf-master\src\main\resources\templates" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\DS_Assignment\src\main\resources\templates" />
+      <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -127,6 +109,16 @@
       <set>
         <option value="SpringBootApplicationConfigurationType" />
       </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Application (1)">
@@ -166,25 +158,23 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@12789529" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@12789529" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@27e4aa8e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -215,6 +205,7 @@
       <workItem from="1575194736011" duration="5197000" />
       <workItem from="1575217018013" duration="868000" />
       <workItem from="1575221637185" duration="5105000" />
+      <workItem from="1575366858397" duration="6466000" />
     </task>
     <task id="LOCAL-00001" summary="Changed readme">
       <created>1574885033668</created>

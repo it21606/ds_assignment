@@ -26,9 +26,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
                 .antMatchers("/resources/**").permitAll()
-                .antMatchers(
-                            "/registration**",
-                            "classpath:/static/**",
+                .antMatchers("classpath:/static/**",
                             "/webjars/**").permitAll()
                     .anyRequest().authenticated()
                 .and()
