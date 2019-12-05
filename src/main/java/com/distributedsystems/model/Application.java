@@ -31,7 +31,7 @@ public class Application implements Serializable {
     private int id;
 
     @Column(name = "user_id")
-    private String user_id;
+    private long user_id;
 
     @Column(name = "income")
     private long income;
@@ -45,17 +45,22 @@ public class Application implements Serializable {
     @Column(name = "hasSiblingsInOtherCities")
     private boolean hasSiblingsInOtherCities;
 
+    @Column(name = "status")
+    private String status;
+
     public Application() {
 
     }
 
-    public Application(String user_id,long income, boolean bothParentsUnemployed, boolean hasSiblings, boolean hasSiblingsInOtherCities) {
+    public Application(long user_id, long income, boolean bothParentsUnemployed, boolean hasSiblings, boolean hasSiblingsInOtherCities,
+                       String status) {
         super();
         this.user_id = user_id;
         this.income = income;
         this.bothParentsUnemployed = bothParentsUnemployed;
         this.hasSiblings = hasSiblings;
         this.hasSiblingsInOtherCities = hasSiblingsInOtherCities;
+        this.status = status;
     }
 
 
@@ -67,11 +72,11 @@ public class Application implements Serializable {
         this.id = id;
     }
 
-    public String getUser_id() {
+    public long getUser_id() {
         return user_id;
     }
 
-    public void setUser_id(String user_id) {
+    public void setUser_id(long user_id) {
         this.user_id = user_id;
     }
 
@@ -105,6 +110,14 @@ public class Application implements Serializable {
 
     public void setHasSiblingsInOtherCities(boolean hasSiblingsInOtherCities) {
         this.hasSiblingsInOtherCities = hasSiblingsInOtherCities;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     @Override

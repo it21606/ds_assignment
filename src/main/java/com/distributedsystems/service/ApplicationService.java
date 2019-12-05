@@ -9,5 +9,7 @@ public interface ApplicationService {
 
     Application findById(int id);
 
+    Application save(Application application);
+
     List<Application> findAll();
 }

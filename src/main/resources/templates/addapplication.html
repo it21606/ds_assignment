@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/2a9be2991c.js"></script>
+    <link rel="stylesheet" th:href="@{/css/main.css}" type="text/css"/>
+    <title>Σύστημα ηλεκτρονικής υποβολής αιτήσεων σίτησης</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+          type="text/css"/>
+    <script th:src="@{/webjars/jquery/jquery.min.js/}"
+            type="text/javascript"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"
+            type="text/javascript"></script>
+    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css" rel="stylesheet" type="text/css">
+
+    <script charset="utf8" th:src="@{/js/main.js}" type="text/javascript"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div th:replace="fragments/header :: header"/>
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button class="btn btn-info" id="sidebarCollapse" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="">
+                            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
+                               data-toggle="dropdown" href="#" id="userDropdown" role="button">
+                                Συνδεδεμένος ως: <span sec:authentication="principal.username">User</span>
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div aria-labelledby="userDropdown"
+                                 class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                 sec:authorize="isAuthenticated()">
+                                <a class="dropdown-item" th:href="@{/logout}">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+
+                <div th:if="${param.success}">
+                    <div class="alert alert-info alert-dismissible fade show">Ο χρήστης προστέθηκε με επιτυχία.
+                        <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <h1>Φόρμα εισαγωγής χρήστη</h1>
+                <form method="post" th:action="@{/addapplication}" th:object="${newapplication}">
+
+                    <div class="form-group">
+                        <label class="control-label" for="bothParentsUnemployed">Είναι και οι 2 γονείς σας
+                            άνεργοι;</label> <input
+                            class="" id="bothParentsUnemployed" th:field="*{bothParentsUnemployed}" type="checkbox"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="lastName">Ετήσιο οικογενιακό εισόδημα</label> <input
+                            class="" id="lastName" th:field="*{income}" type="number"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="email">Έχετε αδέρφια;</label> <input
+                            class="" id="email" th:field="*{hasSiblings}" type="checkbox"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="confirmEmail">Σπουδάζουν σε άλλη πόλη;</label>
+                        <input class="" id="confirmEmail" th:field="*{hasSiblingsInOtherCities}"
+                               type="checkbox"/>
+                        <div class="form-group">
+                            <button class="btn btn-success" type="submit">Προσθήκη</button>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+</script>
+</html>

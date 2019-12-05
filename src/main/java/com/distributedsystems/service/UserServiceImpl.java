@@ -39,10 +39,9 @@ public class UserServiceImpl implements UserService {
         return userRepository.findByEmail(email);
     }
 
-    public List<UserDto> findAll(){
-
+    public List<UserDto> findAll() {
         List<User>  users = userRepository.findAll();
-        List<UserDto> userDtos= new ArrayList<UserDto>();
+        List<UserDto> userDtos = new ArrayList<>();
         for (User user: users) {
             UserDto mappedUser = Map(user);
             userDtos.add(mappedUser);
@@ -71,7 +70,7 @@ public class UserServiceImpl implements UserService {
         user.setMemberSince(sdf.format(timestamp));
         user.setPhoneNumber(registration.getPhoneNumber());
         boolean isAdmin = registration.getCategory().contains("Υπάλληλος");
-        if(isAdmin) {
+        if (isAdmin) {
             Role initialRole = roleRepository.findByName("ROLE_ADMIN");
             if (initialRole != null) {
                 user.setRoles(Arrays.asList(initialRole));

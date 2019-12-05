@@ -51,4 +51,5 @@ public class MainController {
         model.addAttribute("currentUser", currentUser);
         return "profile";
     }
+
 }
