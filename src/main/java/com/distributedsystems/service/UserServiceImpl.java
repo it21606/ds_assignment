@@ -1,14 +1,12 @@
 package com.distributedsystems.service;
 
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.*;
-import java.util.stream.Collectors;
-
 import com.distributedsystems.helpers.Helpers;
+import com.distributedsystems.model.Role;
+import com.distributedsystems.model.User;
 import com.distributedsystems.repository.RoleRepository;
 import com.distributedsystems.repository.UserRepository;
 import com.distributedsystems.web.dto.UserDto;
+import com.distributedsystems.web.dto.UserRegistrationDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -17,9 +15,13 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.distributedsystems.model.Role;
-import com.distributedsystems.model.User;
-import com.distributedsystems.web.dto.UserRegistrationDto;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -109,6 +111,7 @@ public class UserServiceImpl implements UserService {
     private UserDto Map(User user){
         UserDto userDto = new UserDto();
         if(user != null) {
+            userDto.setUserId(user.getId());
             userDto.setFirstName(user.getFirstName());
             userDto.setLastName(user.getLastName());
             userDto.setEmail(user.getEmail());

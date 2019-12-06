@@ -1,32 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/AddApplicationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addapplication.html" afterDir="false" />
+    <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="Profile changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/helpers/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/helpers/Helpers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/model/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/model/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/repository/ApplicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/repository/ApplicationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/ApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/listusers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/listusers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addapplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addapplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/adduser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/adduser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/list-users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/list-users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/helpers/Helpers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/helpers/Helpers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/model/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/model/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/repository/ApplicationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/repository/ApplicationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/ApplicationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/ApplicationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/ApplicationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/ApplicationServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/dto/UserDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/listusers.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/listusers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/addapplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/addapplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/list-users.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/list-users.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +44,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -101,21 +95,18 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.distributedsystems.repository" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.distributedsystems.web" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Desktop\DS_Assignment\src\main\resources\templates" />
-      <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\templates" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\static\images" />
       <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\templates" />
       <recent name="C:\Users\user\Desktop\registration-login-springboot-security-thymeleaf-master\src\main\resources\static" />
       <recent name="C:\Users\user\Desktop\registration-login-springboot-security-thymeleaf-master\src\main\resources\templates" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\DS_Assignment\src\main\resources\templates" />
+      <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -128,16 +119,6 @@
       <set>
         <option value="SpringBootApplicationConfigurationType" />
       </set>
-    </option>
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Application (1)">
@@ -177,23 +158,25 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@52293849" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@52293849" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@193e051a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -224,9 +207,10 @@
       <workItem from="1575194736011" duration="5197000" />
       <workItem from="1575217018013" duration="868000" />
       <workItem from="1575221637185" duration="5105000" />
-      <workItem from="1575366858397" duration="6590000" />
-      <workItem from="1575453065619" duration="167000" />
-      <workItem from="1575562347655" duration="5522000" />
+      <workItem from="1575366858397" duration="6466000" />
+      <workItem from="1575398561925" duration="119000" />
+      <workItem from="1575478030476" duration="1601000" />
+      <workItem from="1575663911415" duration="4827000" />
     </task>
     <task id="LOCAL-00001" summary="Changed readme">
       <created>1574885033668</created>
@@ -284,12 +268,12 @@
       <option name="project" value="LOCAL" />
       <updated>1575202385709</updated>
     </task>
-    <task id="LOCAL-00009" summary="Profile page">
-      <created>1575383380938</created>
+    <task id="LOCAL-00009" summary="Profile changes">
+      <created>1575387417246</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1575383380938</updated>
+      <updated>1575387417246</updated>
     </task>
     <option name="localTasksCounter" value="10" />
     <servers />
@@ -311,6 +295,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Changed readme" />
     <MESSAGE value="Fixed json return" />
@@ -319,55 +304,57 @@
     <MESSAGE value="Maven build" />
     <MESSAGE value="Template and code changes." />
     <MESSAGE value="Contact page,user service" />
-    <MESSAGE value="Profile page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Profile page" />
+    <MESSAGE value="Profile changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Profile changes" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1575225520361">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1575668089329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1575225520361" />
-    <state x="580" y="114" key="CommitChangelistDialog2" timestamp="1575202384429">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1575668089329" />
+    <state x="580" y="114" key="CommitChangelistDialog2" timestamp="1575665395228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="580" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1575202384429" />
+    <state x="580" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1575665395228" />
     <state width="433" height="466" key="DebuggerActiveHint" timestamp="1575224622970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="433" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1575224622970" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1575226754987">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1575668746159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754987" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1575226754987">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575668746159" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1575668746159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754987" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1575226754987">
+    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575668746159" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1575668746159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754987" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1575226754987">
+    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575668746159" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1575668746159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754987" />
-    <state width="1293" height="282" key="GridCell.Tab.1.bottom" timestamp="1575226754988">
+    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575668746159" />
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom" timestamp="1575668746160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754988" />
-    <state width="1293" height="282" key="GridCell.Tab.1.center" timestamp="1575226754988">
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575668746160" />
+    <state width="1293" height="282" key="GridCell.Tab.1.center" timestamp="1575668746160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754988" />
-    <state width="1293" height="282" key="GridCell.Tab.1.left" timestamp="1575226754987">
+    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575668746160" />
+    <state width="1293" height="282" key="GridCell.Tab.1.left" timestamp="1575668746160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754987" />
-    <state width="1293" height="282" key="GridCell.Tab.1.right" timestamp="1575226754988">
+    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575668746160" />
+    <state width="1293" height="282" key="GridCell.Tab.1.right" timestamp="1575668746160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575226754988" />
+    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575668746160" />
     <state width="1293" height="282" key="GridCell.Tab.2.bottom" timestamp="1575224643441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -384,14 +371,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1293" height="282" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575224643441" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1575202388394">
+    <state x="672" y="235" key="MultipleFileMergeDialog" timestamp="1575663943361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575202388394" />
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575221650461">
+    <state x="672" y="235" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575663943361" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1575387420444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575221650461" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575387420444" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575663926924">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575663926924" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575663931182">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575663931182" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1575385244994">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575385244994" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -408,12 +407,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java</url>
-          <line>72</line>
+          <line>71</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java</url>
-          <line>68</line>
+          <line>67</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>

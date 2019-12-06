@@ -6,6 +6,8 @@ import java.util.Collection;
 
 public class UserDto {
 
+    private long userId;
+
     private String firstName;
 
     private String lastName;
@@ -90,5 +92,13 @@ public class UserDto {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 }

@@ -1,31 +1,26 @@
 $(document).ready(function () {
-
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-    });
-
-    $('#example').DataTable( {
-        ajax: {
-            url: '/api/users/all',
-            type: 'GET',
-            dataType: 'json',
-            dataSrc: ''
-        },
-        select: true,
+    var table = new Tabulator("#example", {
+        ajaxURL: "api/users/all", //ajax URL
+        selectable: 1,
+        headerFilterPlaceholder: "filter data...",
         columns: [
-            { data: 'fullName' },
-            { data: 'email' },
-            { data: 'phoneNumber'},
-            { data: 'category'},
-            { data: 'memberSince'},
-            { data: 'status'}
-
-        ]
-    } );
-
-     function checkbox ( data, type, full, meta ) {
-        var is_checked = data === true ? "checked" : "";
-        return '<input type="checkbox" class="checkbox" ' +
-            is_checked + ' />';
-    }
+            {title: "Πλήρες όνομα", field: "fullName", headerFilter: "input"},
+            {title: "Ε-mail", field: "email", headerFilter: "input"},
+            {title: "Τηλέφωνο", field: "phoneNumber", headerFilter: "input"},
+            {title: "Κατηγορία", field: "category", headerFilter: "input"},
+            {title: "Μέλος από", field: "memberSince", headerFilter: "input"},
+            {title: "Κατάσταση", field: "status", headerFilter: "input"},
+        ],
+        layout: "fitDataStretch",
+        pagination: "local",
+        paginationSize: 10,
+        paginationSizeSelector: [10, 20, 50],
+        movableColumns: true,
+        rowSelected: function (e, row) {
+            var selectedRows = this.getSelectedData();
+            console.log(selectedRows[0].userId);
+        },
+    });
 });
+
+
