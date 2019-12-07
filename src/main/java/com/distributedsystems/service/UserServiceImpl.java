@@ -5,8 +5,8 @@ import com.distributedsystems.model.Role;
 import com.distributedsystems.model.User;
 import com.distributedsystems.repository.RoleRepository;
 import com.distributedsystems.repository.UserRepository;
-import com.distributedsystems.web.dto.UserDto;
 import com.distributedsystems.web.dto.UserRegistrationDto;
+import com.distributedsystems.web.viewmodel.UserViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -37,27 +37,28 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
-    public User findByEmail(String email){
+    public User findByEmail(String email) {
         return userRepository.findByEmail(email);
     }
 
-    public List<UserDto> findAll() {
-        List<User>  users = userRepository.findAll();
-        List<UserDto> userDtos = new ArrayList<>();
-        for (User user: users) {
-            UserDto mappedUser = Map(user);
-            userDtos.add(mappedUser);
+
+    public List<UserViewModel> findAll() {
+        List<User> users = userRepository.findAll();
+        List<UserViewModel> userViewModels = new ArrayList<>();
+        for (User user : users) {
+            UserViewModel mappedUser = Map(user);
+            userViewModels.add(mappedUser);
         }
 
-        return userDtos;
+        return userViewModels;
     }
 
-    public UserDto findByEmailUserDto(String email){
+    public UserViewModel findByIdUserViewModel(long id) {
 
-        User user = userRepository.findByEmail(email);
-        UserDto userDto= Map(user);
+        User user = userRepository.findById(id);
+        UserViewModel userViewModel = Map(user);
 
-        return userDto;
+        return userViewModel;
     }
 
 
@@ -108,20 +109,20 @@ public class UserServiceImpl implements UserService {
     }
 
     //region Mapping
-    private UserDto Map(User user){
-        UserDto userDto = new UserDto();
-        if(user != null) {
-            userDto.setUserId(user.getId());
-            userDto.setFirstName(user.getFirstName());
-            userDto.setLastName(user.getLastName());
-            userDto.setEmail(user.getEmail());
-            userDto.setRoles(user.getRoles());
-            userDto.setCategory(user.getCategory());
-            userDto.setPhoneNumber(user.getPhoneNumber());
-            userDto.setMemberSince(user.getMemberSince());
-            userDto.setStatus(Helpers.userStatusMap.get(user.getStatus()));
+    public UserViewModel Map(User user) {
+        UserViewModel userViewModel = new UserViewModel();
+        if (user != null) {
+            userViewModel.setUserId(user.getId());
+            userViewModel.setFirstName(user.getFirstName());
+            userViewModel.setLastName(user.getLastName());
+            userViewModel.setEmail(user.getEmail());
+            userViewModel.setRoles(user.getRoles());
+            userViewModel.setCategory(user.getCategory());
+            userViewModel.setPhoneNumber(user.getPhoneNumber());
+            userViewModel.setMemberSince(user.getMemberSince());
+            userViewModel.setStatus(Helpers.userStatusMap.get(user.getStatus()));
         }
-        return userDto;
+        return userViewModel;
     }
 
     //endregion

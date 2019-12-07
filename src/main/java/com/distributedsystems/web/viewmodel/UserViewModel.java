@@ -1,10 +1,10 @@
-package com.distributedsystems.web.dto;
+package com.distributedsystems.web.viewmodel;
 
 import com.distributedsystems.model.Role;
 
 import java.util.Collection;
 
-public class UserDto {
+public class UserViewModel {
 
     private long userId;
 

@@ -4,21 +4,18 @@ import com.distributedsystems.model.Application;
 import com.distributedsystems.model.User;
 import com.distributedsystems.service.ApplicationService;
 import com.distributedsystems.service.UserService;
-import com.distributedsystems.web.dto.UserDto;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import java.security.Principal;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/")
+@RequestMapping("api/applications/")
 public class ApplicationController {
 
     private final ApplicationService _applicationService;
