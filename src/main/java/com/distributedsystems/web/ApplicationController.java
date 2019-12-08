@@ -21,9 +21,9 @@ public class ApplicationController {
     private final ApplicationService _applicationService;
     private final UserService _userService;
 
-    public ApplicationController(ApplicationService applicationService,UserService userService) {
-       _applicationService = applicationService;
-       _userService = userService;
+    public ApplicationController(ApplicationService applicationService, UserService userService) {
+        _applicationService = applicationService;
+        _userService = userService;
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE})

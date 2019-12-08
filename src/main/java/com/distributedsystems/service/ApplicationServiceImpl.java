@@ -2,13 +2,12 @@ package com.distributedsystems.service;
 
 import com.distributedsystems.model.Application;
 import com.distributedsystems.repository.ApplicationRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class ApplicationServiceImpl implements ApplicationService{
+public class ApplicationServiceImpl implements ApplicationService {
 
 
     private final ApplicationRepository _applicationRepository;
@@ -17,7 +16,7 @@ public class ApplicationServiceImpl implements ApplicationService{
         this._applicationRepository = applicationRepository;
     }
 
-    public Application findById(int id){
+    public Application findById(int id) {
         return _applicationRepository.findById(id);
     }
 

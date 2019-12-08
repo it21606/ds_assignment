@@ -10,11 +10,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class MainController {
+public class MainController extends BaseController {
 
     private UserService userService;
 
     public MainController(UserService userService) {
+        super();
         this.userService = userService;
     }
 
