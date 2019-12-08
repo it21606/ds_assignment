@@ -19,7 +19,7 @@ $(document).ready(function () {
         rowSelected: function (e, row) {
             var selectedRows = this.getSelectedData();
             console.log(selectedRows[0].userId);
-            let url = "/api/users/" + selectedRows[0].userId;
+            let url = "/edit/" + selectedRows[0].userId;
             window.open(url);
         },
     });

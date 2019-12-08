@@ -1,16 +1,14 @@
 package com.distributedsystems.model;
 
 import javax.persistence.*;
-import java.sql.Time;
-import java.sql.Timestamp;
 import java.util.Collection;
 
 @Entity
-@Table(uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = "id"))
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String firstName;

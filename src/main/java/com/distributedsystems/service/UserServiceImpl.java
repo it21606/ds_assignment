@@ -61,6 +61,12 @@ public class UserServiceImpl implements UserService {
         return userViewModel;
     }
 
+    public User findById(long id) {
+
+        User user = userRepository.findById(id);
+        return user;
+    }
+
 
     public User save(UserRegistrationDto registration) {
         User user = new User();
@@ -80,7 +86,7 @@ public class UserServiceImpl implements UserService {
             } else {
                 user.setRoles(Arrays.asList(new Role("ROLE_ADMIN")));
             }
-        }else{
+        } else {
             Role initialRole = roleRepository.findByName("ROLE_USER");
             if (initialRole != null) {
                 user.setRoles(Arrays.asList(initialRole));
@@ -91,10 +97,30 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(user);
     }
 
+
+    public User update(UserViewModel userUpdate) {
+        if (userUpdate != null) {
+            User user = findById(userUpdate.getUserId());
+            user.setId(userUpdate.getUserId());
+            user.setFirstName(userUpdate.getFirstName());
+            user.setLastName(userUpdate.getLastName());
+            user.setEmail(userUpdate.getEmail());
+            user.setCategory(userUpdate.getCategory());
+            user.setPhoneNumber(userUpdate.getPhoneNumber());
+            String newStatus = userUpdate.getStatus();
+            String newStatusMapped = Helpers.userStatusMap.get(newStatus);
+            user.setStatus(newStatusMapped);
+            return userRepository.save(user);
+        } else {
+            return new User();
+        }
+
+    }
+
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         User user = userRepository.findByEmail(email);
-        if (user == null){
+        if (user == null) {
             throw new UsernameNotFoundException("Λάνθασμένα στοιχεία σύνδεσης.");
         }
         return new org.springframework.security.core.userdetails.User(user.getEmail(),

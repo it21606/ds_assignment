@@ -8,8 +8,11 @@ public class Helpers {
 
     public static Map<String, String> userStatusMap;
     static {
-        userStatusMap = new HashMap<>();
+        userStatusMap = new HashMap() {
+        };
         userStatusMap.put("ACTIVE", "Ενεργός");
-        userStatusMap.put("DISABLED", "Απενεργοποιημένος");
+        userStatusMap.put("DISABLED", "Ανενεργός");
+        userStatusMap.put("Ενεργός", "ACTIVE");
+        userStatusMap.put("Ανενεργός", "DISABLED");
     }
 }
