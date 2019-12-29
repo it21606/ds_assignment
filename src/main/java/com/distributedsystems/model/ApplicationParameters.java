@@ -13,7 +13,7 @@ public class ApplicationParameters {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
-    private int id;
+    private long id;
 
     @Column(name = "current_period")
     private String currentPeriod;
@@ -24,11 +24,11 @@ public class ApplicationParameters {
     @Column(name = "max_applicants")
     private Long maxApplicants;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

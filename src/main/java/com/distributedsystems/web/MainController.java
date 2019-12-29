@@ -1,6 +1,7 @@
 package com.distributedsystems.web;
 
 import com.distributedsystems.model.User;
+import com.distributedsystems.service.ApplicationParametersService;
 import com.distributedsystems.service.UserService;
 import com.distributedsystems.web.viewmodel.UserViewModel;
 import org.springframework.security.core.Authentication;
@@ -10,13 +11,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class MainController extends BaseController {
+public class MainController {
 
     private UserService userService;
+    private ApplicationParametersService applicationParametersService;
 
-    public MainController(UserService userService) {
-        super();
+    public MainController(UserService userService, ApplicationParametersService applicationParametersService) {
         this.userService = userService;
+        this.applicationParametersService = applicationParametersService;
+
     }
 
     @GetMapping("/")
