@@ -33,12 +33,15 @@
                 <div>
                     <ul class="nav navbar-nav ml-auto">
                         <li class="">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Συνδεδεμένος ως:  <span  sec:authentication="principal.username">User</span>
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Συνδεδεμένος ως: <span sec:authentication="principal.username">User</span>
                             </a>
                             <!-- Dropdown - User Information -->
-                            <div sec:authorize="isAuthenticated()" class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a  th:href="@{/logout}" class="dropdown-item" >
+                            <div sec:authorize="isAuthenticated()"
+                                 class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                 aria-labelledby="userDropdown">
+                                <a th:href="@{/logout}" class="dropdown-item">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -50,8 +53,10 @@
         </nav>
         <h2>Λίστα χρηστών</h2>
         <br>
-        <div class="col-md-8">
-            <div class="table-bordered" id="example"></div>
+        <div class="container-fluid">
+            <div class="">
+                <div style="width:100%;" class="table-bordered" id="example"></div>
+            </div>
         </div>
     </div>
 </div>

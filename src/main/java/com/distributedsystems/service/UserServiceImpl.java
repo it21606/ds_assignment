@@ -110,11 +110,21 @@ public class UserServiceImpl implements UserService {
             String newStatus = userUpdate.getStatus();
             String newStatusMapped = Helpers.userStatusMap.get(newStatus);
             user.setStatus(newStatusMapped);
+            boolean isAdmin = userUpdate.getCategory().contains("Υπάλληλος");
+            if (isAdmin) {
+                Role roleAdmin = roleRepository.findByName("ROLE_ADMIN");
+                ArrayList<Role> roles = new ArrayList<>();
+                roles.add(roleAdmin);
+                user.setRoles(roles);
+            } else {
+                Role userRole = roleRepository.findByName("ROLE_ADMIN");
+                ArrayList<Role> roles = new ArrayList<>();
+                roles.add(userRole);
+                user.setRoles(roles);
+            }
             return userRepository.save(user);
-        } else {
-            return new User();
         }
-
+        return new User();
     }
 
     @Override
@@ -128,7 +138,7 @@ public class UserServiceImpl implements UserService {
                 mapRolesToAuthorities(user.getRoles()));
     }
 
-    private Collection<? extends GrantedAuthority> mapRolesToAuthorities(Collection<Role> roles){
+    private Collection<? extends GrantedAuthority> mapRolesToAuthorities(Collection<Role> roles) {
         return roles.stream()
                 .map(role -> new SimpleGrantedAuthority(role.getName()))
                 .collect(Collectors.toList());

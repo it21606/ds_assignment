@@ -17,7 +17,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.4.3/css/bootstrap/tabulator_bootstrap4.css"
           rel="stylesheet">
     <script src="https://unpkg.com/tabulator-tables@4.5.1/dist/js/tabulator.min.js" type="text/javascript"></script>
-    <script type="text/javascript" charset="utf8" th:src="@{/js/listusers.js}"></script>
+    <script type="text/javascript" charset="utf8" th:src="@{/js/listapplications.js}"></script>
     <script type="text/javascript" charset="utf8" th:src="@{/js/main.js}"></script>
 </head>
 <body>
@@ -33,16 +33,15 @@
                 <div>
                     <ul class="nav navbar-nav ml-auto">
                         <li class="">
-                            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
-                               data-toggle="dropdown"
-                               href="#" id="userDropdown" role="button">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Συνδεδεμένος ως: <span sec:authentication="principal.username">User</span>
                             </a>
                             <!-- Dropdown - User Information -->
-                            <div aria-labelledby="userDropdown"
+                            <div sec:authorize="isAuthenticated()"
                                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                 sec:authorize="isAuthenticated()">
-                                <a class="dropdown-item" th:href="@{/logout}">
+                                 aria-labelledby="userDropdown">
+                                <a th:href="@{/logout}" class="dropdown-item">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -52,11 +51,11 @@
                 </div>
             </div>
         </nav>
-        <h2>Λίστα χρηστών</h2>
+        <h2>Λίστα αιτήσεων</h2>
         <br>
         <div class="container-fluid">
             <div class="">
-                <div class="table-bordered" id="example" style="width:100%;"></div>
+                <div style="width:100%;"  class="table-bordered" id="example"></div>
             </div>
         </div>
     </div>

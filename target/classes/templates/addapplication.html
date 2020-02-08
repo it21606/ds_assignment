@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8"/>
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
@@ -63,28 +63,29 @@
                 <form method="post" th:action="@{/addapplication}" th:object="${newapplication}">
 
                     <div class="form-group">
-                        <label class="control-label" for="bothParentsUnemployed">Είναι και οι 2 γονείς σας
-                            άνεργοι;</label>
-                        <input
-                                class="" id="bothParentsUnemployed" th:field="*{bothParentsUnemployed}"
-                                type="checkbox"/>
+                        <label class="control-label" for="bothParentsUnemployed">Είναι και οι 2 γονείς σας άνεργοι;</label>
+                        <input  id="bothParentsUnemployed" th:field="*{bothParentsUnemployed}" type="checkbox"/>
                     </div>
+
                     <div class="form-group">
-                        <label class="control-label" for="lastName">Ετήσιο οικογενιακό εισόδημα</label> <input
-                            class="" id="lastName" th:field="*{income}" type="number"/>
+                        <label class="control-label" for="income">Ετήσιο οικογενιακό εισόδημα</label>
+                        <input class="form-control" id="income" th:field="*{income}" type="number"/>
                     </div>
+
                     <div class="form-group">
-                        <label class="control-label " for="email">Έχετε αδέρφια;</label> <input
-                            class="" id="email" th:field="*{hasSiblings}" type="checkbox"/>
+                        <label class="control-label " for="email">Έχετε αδέρφια;</label>
+                        <input class="" id="email" th:field="*{hasSiblings}" type="checkbox"/>
                     </div>
+
+
                     <div class="form-group">
                         <label class="control-label" for="confirmEmail">Σπουδάζουν σε άλλη πόλη;</label>
-                        <input class="" id="confirmEmail" th:field="*{hasSiblingsInOtherCities}"
-                               type="checkbox"/>
-                        <div class="form-group">
-                            <button class="btn btn-success" type="submit">Προσθήκη</button>
-                        </div>
+                        <input class="" id="confirmEmail" th:field="*{hasSiblingsInOtherCities}" type="checkbox"/>
+                    </div>
 
+                    <div class="form-group">
+                        <button class="btn btn-success" type="submit">Προσθήκη</button>
+                    </div>
                 </form>
             </div>
         </div>

@@ -17,38 +17,40 @@
                     <i class="fas fa-briefcase"></i>
                     Προφίλ Χρήστη
                 </a>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <a aria-expanded="false" class="dropdown-toggle" data-toggle="collapse" href="#pageSubmenu"
+                   sec:authorize="hasRole('ROLE_USER')">
                     <i class="fas fa-copy"></i>
                     Αιτήσεις
                 </a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li>
+                    <li sec:authorize="hasRole('ROLE_USER')">
                         <a th:href="@{/addapplication}">Υποβολή αίτησης</a>
                     </li>
-                    <li>
+                    <li sec:authorize="hasRole('ROLE_USER')">
                         <a href="#">Οι αιτήσεις μου</a>
                     </li>
                 </ul>
             </li>
-            <li>
-                <a href="#adminSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+        <li sec:authorize="hasRole('ROLE_ADMIN')">
+            <a aria-expanded="false" class="dropdown-toggle" data-toggle="collapse" href="#adminSubmenu"
+               sec:authorize="hasRole('ROLE_ADMIN')">
                     <i class="fas fa-copy"></i>
                     Διαχείριση
                 </a>
                 <ul class="collapse list-unstyled" id="adminSubmenu">
-                    <li>
+                    <li sec:authorize="hasRole('ROLE_ADMIN')">
                         <a th:href="@{/listapplications}">Διαχείριση αίτησεων</a>
                     </li>
-                    <li>
+                    <li sec:authorize="hasRole('ROLE_ADMIN')">
                         <a th:href="@{/listusers}">Διαχείριση χρηστών</a>
                     </li>
-                    <li>
+                    <li sec:authorize="hasRole('ROLE_ADMIN')">
                         <a th:href="@{/adduser}">Προσθήκη χρήστη</a>
                     </li>
                 </ul>
             </li>
-        <li>
-            <a th:href="@{/parameters}">
+        <li sec:authorize="hasRole('ROLE_ADMIN')">
+            <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/parameters}">
                 <i class="fas fa-cog"></i>
                 Παράμετροι
             </a>

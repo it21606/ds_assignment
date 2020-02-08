@@ -1,13 +1,7 @@
 package com.distributedsystems.model;
 
+import javax.persistence.*;
 import java.io.Serializable;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
 
 
@@ -33,6 +27,9 @@ public class Application implements Serializable {
     @Column(name = "user_id")
     private long user_id;
 
+    @Column(name = "user_info")
+    private String user_info;
+
     @Column(name = "income")
     private long income;
 
@@ -47,6 +44,17 @@ public class Application implements Serializable {
 
     @Column(name = "status")
     private String status;
+
+    @Column(name = "collected_points")
+    private Long collected_points;
+
+    private String statusDisplay;
+
+    private String bothParentsUnemployedDisplay;
+
+    private String hasSiblingsDisplay;
+
+    private String hasSiblingsInOtherCitiesDisplay;
 
     public Application() {
 
@@ -63,6 +71,21 @@ public class Application implements Serializable {
         this.status = status;
     }
 
+    public Application(long user_id, String user_info, long income, boolean bothParentsUnemployed, boolean hasSiblings, boolean hasSiblingsInOtherCities, String status, Long collected_points, String statusDisplay,
+                       String bothParentsUnemployedDisplay, String hasSiblingsDisplay, String hasSiblingsInOtherCitiesDisplay) {
+        this.user_id = user_id;
+        this.user_info = user_info;
+        this.income = income;
+        this.bothParentsUnemployed = bothParentsUnemployed;
+        this.hasSiblings = hasSiblings;
+        this.hasSiblingsInOtherCities = hasSiblingsInOtherCities;
+        this.status = status;
+        this.collected_points = collected_points;
+        this.statusDisplay = statusDisplay;
+        this.bothParentsUnemployedDisplay = bothParentsUnemployedDisplay;
+        this.hasSiblingsDisplay = hasSiblingsDisplay;
+        this.hasSiblingsInOtherCitiesDisplay = hasSiblingsInOtherCitiesDisplay;
+    }
 
     public int getId() {
         return id;
@@ -120,12 +143,66 @@ public class Application implements Serializable {
         this.status = status;
     }
 
-    @Override
-    public String toString() {
-        return "Customer [user_id=" + user_id + ", income=" + income + ", bothParentsUnemployed=" + bothParentsUnemployed + ", " +
-                "hasSiblings=" + hasSiblings + ", hasSiblingsInOtherCities=" + hasSiblingsInOtherCities + "]";
+    public String getUser_info() {
+        return user_info;
     }
 
+    public void setUser_info(String user_info) {
+        this.user_info = user_info;
+    }
 
+    public Long getCollected_points() {
+        return collected_points;
+    }
 
+    public void setCollected_points(Long collected_points) {
+        this.collected_points = collected_points;
+    }
+
+    public String getStatusDisplay() {
+        return statusDisplay;
+    }
+
+    public void setStatusDisplay(String statusDisplay) {
+        this.statusDisplay = statusDisplay;
+    }
+
+    public String getBothParentsUnemployedDisplay() {
+        return bothParentsUnemployedDisplay;
+    }
+
+    public void setBothParentsUnemployedDisplay(String bothParentsUnemployedDisplay) {
+        this.bothParentsUnemployedDisplay = bothParentsUnemployedDisplay;
+    }
+
+    public String getHasSiblingsDisplay() {
+        return hasSiblingsDisplay;
+    }
+
+    public void setHasSiblingsDisplay(String hasSiblingsDisplay) {
+        this.hasSiblingsDisplay = hasSiblingsDisplay;
+    }
+
+    public String getHasSiblingsInOtherCitiesDisplay() {
+        return hasSiblingsInOtherCitiesDisplay;
+    }
+
+    public void setHasSiblingsInOtherCitiesDisplay(String hasSiblingsInOtherCitiesDisplay) {
+        this.hasSiblingsInOtherCitiesDisplay = hasSiblingsInOtherCitiesDisplay;
+    }
+
+    @Override
+    public String toString() {
+        return "Application{" +
+                "id=" + id +
+                ", user_id=" + user_id +
+                ", user_info='" + user_info + '\'' +
+                ", income=" + income +
+                ", bothParentsUnemployed=" + bothParentsUnemployed +
+                ", hasSiblings=" + hasSiblings +
+                ", hasSiblingsInOtherCities=" + hasSiblingsInOtherCities +
+                ", status='" + status + '\'' +
+                ", collected_points=" + collected_points +
+                '}';
+    }
 }

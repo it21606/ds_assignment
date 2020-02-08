@@ -32,6 +32,11 @@ public class MainController {
         return "list-users";
     }
 
+    @GetMapping("/listapplications")
+    public String listApplications() {
+        return "list-applications";
+    }
+
     @GetMapping("/login")
     public String login(Model model) {
         return "login";

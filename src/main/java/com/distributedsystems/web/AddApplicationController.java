@@ -45,6 +45,7 @@ public class AddApplicationController {
         User currentUser = _userService.findByEmail(authentication.getName());
         application.setUser_id(currentUser.getId());
         application.setStatus("PENDING");
+        application.setUser_info(currentUser.getFirstName() + " " + currentUser.getLastName());
         _applicationService.save(application);
         System.out.print("Application : " + application);
         if (result.hasErrors()) {

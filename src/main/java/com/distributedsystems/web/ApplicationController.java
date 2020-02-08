@@ -1,5 +1,6 @@
 package com.distributedsystems.web;
 
+import com.distributedsystems.helpers.Helpers;
 import com.distributedsystems.model.Application;
 import com.distributedsystems.model.User;
 import com.distributedsystems.service.ApplicationService;
@@ -24,24 +25,41 @@ public class ApplicationController {
     public ApplicationController(ApplicationService applicationService, UserService userService) {
         _applicationService = applicationService;
         _userService = userService;
+
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE})
-    public Application findById(@PathVariable("id") int id, HttpServletRequest request){
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
+    public Application findById(@PathVariable("id") int id, HttpServletRequest request) {
         Application application = _applicationService.findById(id);
         Principal principal = request.getUserPrincipal();
         User user = _userService.findByEmail(principal.getName());
 
-        System.out.print("Application from "+ user.getFirstName() +" "+ user.getLastName() +": " + application);
+        System.out.print("Application from " + user.getFirstName() + " " + user.getLastName() + ": " + application);
         return application;
 
     }
 
-    @RequestMapping(value = "/all", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(value = "/all", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
     public List<Application> listApplications() {
-        List<Application> application = _applicationService.findAll();
-        System.out.print("Application : " + application);
-        return application;
+        List<Application> applications = _applicationService.findAll();
+        for (Application application : applications
+        ) {
+            if (application.getStatus() != null) {
+                String displayStatus = Helpers.statusStatusMap.get(application.getStatus());
+                application.setStatusDisplay(displayStatus);
+            }
+            String bothParents = Helpers.booleanStatusMap.get(application.isBothParentsUnemployed());
+            application.setBothParentsUnemployedDisplay(bothParents);
+
+            String hasSiblings = Helpers.booleanStatusMap.get(application.isHasSiblings());
+            application.setHasSiblingsDisplay(hasSiblings);
+
+            String otherCities = Helpers.booleanStatusMap.get(application.isHasSiblingsInOtherCities());
+            application.setHasSiblingsInOtherCitiesDisplay(otherCities);
+
+        }
+        System.out.print("Application : " + applications);
+        return applications;
 
     }
 
