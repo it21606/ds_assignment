@@ -71,6 +71,11 @@ public class MainController {
     public String changePassword(@ModelAttribute("passwordVM") ChangePasswordViewModel passwordVM) {
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        return "redirect:/changePassword?success";
+        boolean isSuccess = userService.changePassword(passwordVM, authentication.getName());
+        if (isSuccess) {
+            return "redirect:/changePassword?success";
+        } else {
+            return "redirect:/changePassword?error";
+        }
     }
 }
