@@ -7,6 +7,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/2a9be2991c.js"></script>
     <link rel="stylesheet" th:href="@{/css/main.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/profile.css}" type="text/css"/>
     <title>Σύστημα ηλεκτρονικής υποβολής αιτήσεων σίτησης</title>
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
           type="text/css"/>
@@ -29,8 +30,9 @@
                 <div>
                     <ul class="nav navbar-nav ml-auto">
                         <li class="">
-                            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
-                               data-toggle="dropdown" href="#" id="userDropdown" role="button">
+                            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle text-break"
+                               data-toggle="dropdown"
+                               href="#" id="userDropdown" role="button">
                                 Συνδεδεμένος ως: <span sec:authentication="principal.username">User</span>
                             </a>
                             <!-- Dropdown - User Information -->
@@ -51,39 +53,30 @@
             <div class="col-md-6 col-md-offset-3">
 
                 <div th:if="${param.success}">
-                    <div class="alert alert-info alert-dismissible fade show">Ο χρήστης προστέθηκε με επιτυχία.
-                        <button aria-label="Close" class="close" data-dismiss="alert" type="button">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-
+                    <div class="alert alert-info alert-dismissible fade show">Ο χρήστης προστέθηκε με επιτυχία.</div>
+                    <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
 
                 <h1>Φόρμα εισαγωγής χρήστη</h1>
-                <form method="post" th:action="@{/addapplication}" th:object="${newapplication}">
-
+                <form method="post" th:object="${parameters}">
                     <div class="form-group">
-                        <label class="control-label" for="bothParentsUnemployed">Είναι και οι 2 γονείς σας
-                            άνεργοι;</label>
-                        <input
-                                class="" id="bothParentsUnemployed" th:field="*{bothParentsUnemployed}"
-                                type="checkbox"/>
+                        <label class="control-label" for="fullName">Πλήρες όνομα</label> <input
+                            class="form-control" disabled id="applicationsEnabled" th:field="*{applicationsEnabled}"
+                            th:value="*{applicationsEnabled}" type="checkbox"/>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="lastName">Ετήσιο οικογενιακό εισόδημα</label> <input
-                            class="" id="lastName" th:field="*{income}" type="number"/>
+                        <label class="control-label" for="fullName">Πλήρες όνομα</label> <input
+                            class="form-control" disabled id="fullName" th:field="*{currentPeriod}"/>
                     </div>
                     <div class="form-group">
-                        <label class="control-label " for="email">Έχετε αδέρφια;</label> <input
-                            class="" id="email" th:field="*{hasSiblings}" type="checkbox"/>
+                        <label class="control-label" for="firstName">Όνομα</label> <input
+                            class="form-control" id="firstName" th:field="*{maxApplicants}"/>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="confirmEmail">Σπουδάζουν σε άλλη πόλη;</label>
-                        <input class="" id="confirmEmail" th:field="*{hasSiblingsInOtherCities}"
-                               type="checkbox"/>
-                        <div class="form-group">
-                            <button class="btn btn-success" type="submit">Προσθήκη</button>
-                        </div>
+                        <button class="btn btn-success" type="submit">Αποθήκευση</button>
+                    </div>
 
                 </form>
             </div>
