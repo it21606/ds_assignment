@@ -74,6 +74,8 @@ public class UserServiceImpl implements UserService {
         user.setLastName(registration.getLastName());
         user.setEmail(registration.getEmail());
         user.setPassword(passwordEncoder.encode(registration.getPassword()));
+        passwordEncoder.encode(registration.getPassword());
+
         user.setCategory(registration.getCategory());
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         user.setMemberSince(sdf.format(timestamp));
