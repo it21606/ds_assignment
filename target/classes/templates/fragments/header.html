@@ -17,7 +17,8 @@
                     <i class="fas fa-briefcase"></i>
                     Προφίλ Χρήστη
                 </a>
-                <a sec:authorize="hasRole('ROLE_USER')" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <a aria-expanded="false" class="dropdown-toggle" data-toggle="collapse" href="#pageSubmenu"
+                   sec:authorize="hasRole('ROLE_USER')">
                     <i class="fas fa-copy"></i>
                     Αιτήσεις
                 </a>
@@ -30,8 +31,9 @@
                     </li>
                 </ul>
             </li>
-            <li sec:authorize="hasRole('ROLE_ADMIN')">
-                <a sec:authorize="hasRole('ROLE_ADMIN')" href="#adminSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+        <li sec:authorize="hasRole('ROLE_ADMIN')">
+            <a aria-expanded="false" class="dropdown-toggle" data-toggle="collapse" href="#adminSubmenu"
+               sec:authorize="hasRole('ROLE_ADMIN')">
                     <i class="fas fa-copy"></i>
                     Διαχείριση
                 </a>
@@ -54,7 +56,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a th:href="@{/faq}">
                 <i class="fas fa-question"></i>
                 Συχνές ερωτήσεις
             </a>

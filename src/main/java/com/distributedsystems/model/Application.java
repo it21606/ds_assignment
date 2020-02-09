@@ -25,10 +25,10 @@ public class Application implements Serializable {
     private int id;
 
     @Column(name = "user_id")
-    private long user_id;
+    private long userId;
 
     @Column(name = "user_info")
-    private String user_info;
+    private String userInfo;
 
     @Column(name = "income")
     private long income;
@@ -46,7 +46,10 @@ public class Application implements Serializable {
     private String status;
 
     @Column(name = "collected_points")
-    private Long collected_points;
+    private Long collectedPoints;
+
+    @Column(name = "submission_period")
+    private String submissionPeriod;
 
     private String statusDisplay;
 
@@ -60,27 +63,30 @@ public class Application implements Serializable {
 
     }
 
-    public Application(long user_id, long income, boolean bothParentsUnemployed, boolean hasSiblings, boolean hasSiblingsInOtherCities,
-                       String status) {
+    public Application(long userId, long income, boolean bothParentsUnemployed, boolean hasSiblings, boolean hasSiblingsInOtherCities,
+                       String status, Long collectedPoints, String submissionPeriod) {
         super();
-        this.user_id = user_id;
+        this.userId = userId;
         this.income = income;
         this.bothParentsUnemployed = bothParentsUnemployed;
         this.hasSiblings = hasSiblings;
         this.hasSiblingsInOtherCities = hasSiblingsInOtherCities;
         this.status = status;
+        this.collectedPoints = collectedPoints;
+        this.submissionPeriod = submissionPeriod;
     }
 
-    public Application(long user_id, String user_info, long income, boolean bothParentsUnemployed, boolean hasSiblings, boolean hasSiblingsInOtherCities, String status, Long collected_points, String statusDisplay,
+    public Application(long userId, String user_info, long income, boolean bothParentsUnemployed, boolean hasSiblings, boolean hasSiblingsInOtherCities, String status, Long collectedPoints, String statusDisplay,
                        String bothParentsUnemployedDisplay, String hasSiblingsDisplay, String hasSiblingsInOtherCitiesDisplay) {
-        this.user_id = user_id;
-        this.user_info = user_info;
+        this.userId = userId;
+        this.userInfo = user_info;
         this.income = income;
         this.bothParentsUnemployed = bothParentsUnemployed;
         this.hasSiblings = hasSiblings;
         this.hasSiblingsInOtherCities = hasSiblingsInOtherCities;
         this.status = status;
-        this.collected_points = collected_points;
+        this.collectedPoints = collectedPoints;
+        this.submissionPeriod = submissionPeriod;
         this.statusDisplay = statusDisplay;
         this.bothParentsUnemployedDisplay = bothParentsUnemployedDisplay;
         this.hasSiblingsDisplay = hasSiblingsDisplay;
@@ -95,12 +101,12 @@ public class Application implements Serializable {
         this.id = id;
     }
 
-    public long getUser_id() {
-        return user_id;
+    public long getUserId() {
+        return userId;
     }
 
-    public void setUser_id(long user_id) {
-        this.user_id = user_id;
+    public void setUserId(long user_id) {
+        this.userId = user_id;
     }
 
     public long getIncome() {
@@ -143,20 +149,20 @@ public class Application implements Serializable {
         this.status = status;
     }
 
-    public String getUser_info() {
-        return user_info;
+    public String getUserInfo() {
+        return userInfo;
     }
 
-    public void setUser_info(String user_info) {
-        this.user_info = user_info;
+    public void setUserInfo(String user_info) {
+        this.userInfo = user_info;
     }
 
     public Long getCollected_points() {
-        return collected_points;
+        return collectedPoints;
     }
 
-    public void setCollected_points(Long collected_points) {
-        this.collected_points = collected_points;
+    public void setCollected_points(Long collectedPoints) {
+        this.collectedPoints = collectedPoints;
     }
 
     public String getStatusDisplay() {
@@ -191,18 +197,35 @@ public class Application implements Serializable {
         this.hasSiblingsInOtherCitiesDisplay = hasSiblingsInOtherCitiesDisplay;
     }
 
+    public Long getCollectedPoints() {
+        return collectedPoints;
+    }
+
+    public void setCollectedPoints(Long collectedPoints) {
+        this.collectedPoints = collectedPoints;
+    }
+
+    public String getSubmissionPeriod() {
+        return submissionPeriod;
+    }
+
+    public void setSubmissionPeriod(String submissionPeriod) {
+        this.submissionPeriod = submissionPeriod;
+    }
+
     @Override
     public String toString() {
         return "Application{" +
                 "id=" + id +
-                ", user_id=" + user_id +
-                ", user_info='" + user_info + '\'' +
+                ", user_id=" + userId +
+                ", user_info='" + userInfo + '\'' +
                 ", income=" + income +
                 ", bothParentsUnemployed=" + bothParentsUnemployed +
                 ", hasSiblings=" + hasSiblings +
                 ", hasSiblingsInOtherCities=" + hasSiblingsInOtherCities +
                 ", status='" + status + '\'' +
-                ", collected_points=" + collected_points +
+                ", collectedPoints=" + collectedPoints +
+                ", submissionPeriod='" + submissionPeriod + '\'' +
                 '}';
     }
 }

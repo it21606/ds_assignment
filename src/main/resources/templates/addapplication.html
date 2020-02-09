@@ -51,7 +51,7 @@
             <div class="col-md-6 col-md-offset-3">
 
                 <div th:if="${param.success}">
-                    <div class="alert alert-info alert-dismissible fade show">Ο χρήστης προστέθηκε με επιτυχία.
+                    <div class="alert alert-info alert-dismissible fade show">Η αίτηση προστέθηκε με επιτυχία.
                         <button aria-label="Close" class="close" data-dismiss="alert" type="button">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -59,18 +59,18 @@
 
                 </div>
 
-                <h1>Φόρμα εισαγωγής χρήστη</h1>
+                <h1>Φόρμα υποβολής αίτησης</h1>
                 <form method="post" th:action="@{/addapplication}" th:object="${newapplication}">
+
+                    <div class="form-group">
+                        <label class="control-label" for="income">Ετήσιο οικογενιακό εισόδημα</label>
+                        <input class="form-control" id="income" th:field="*{income}" type="number"/>
+                    </div>
 
                     <div class="form-group">
                         <label class="control-label" for="bothParentsUnemployed">Είναι και οι 2 γονείς σας
                             άνεργοι;</label>
                         <input id="bothParentsUnemployed" th:field="*{bothParentsUnemployed}" type="checkbox"/>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label" for="income">Ετήσιο οικογενιακό εισόδημα</label>
-                        <input class="form-control" id="income" th:field="*{income}" type="number"/>
                     </div>
 
                     <div class="form-group">

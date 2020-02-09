@@ -78,6 +78,13 @@
                                 </div>
                             </div>
                             <div class="profile-info-row">
+                                <div class="profile-info-name">Τμήμα:</div>
+                                <div class="profile-info-value">
+                                    <div th:if="${currentUser.category != null}"
+                                         th:text="${currentUser.category}"></div>
+                                </div>
+                            </div>
+                            <div class="profile-info-row">
                                 <div class="profile-info-name">Κατάσταση:</div>
                                 <div class="profile-info-value">
                                     <div th:if="${currentUser.status != null}" th:text="${currentUser.status}"></div>

@@ -117,7 +117,7 @@ public class UserServiceImpl implements UserService {
                 roles.add(roleAdmin);
                 user.setRoles(roles);
             } else {
-                Role userRole = roleRepository.findByName("ROLE_ADMIN");
+                Role userRole = roleRepository.findByName("ROLE_USER");
                 ArrayList<Role> roles = new ArrayList<>();
                 roles.add(userRole);
                 user.setRoles(roles);

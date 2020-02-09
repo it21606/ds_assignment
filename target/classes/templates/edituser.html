@@ -52,13 +52,13 @@
             <div class="col-md-6 col-md-offset-3">
 
                 <div th:if="${param.success}">
-                    <div class="alert alert-info alert-dismissible fade show">Ο χρήστης προστέθηκε με επιτυχία.</div>
+                    <div class="alert alert-info alert-dismissible fade show">Ο χρήστης αποθηκεύτηκε με επιτυχία.</div>
                     <button aria-label="Close" class="close" data-dismiss="alert" type="button">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
 
-                <h1>Φόρμα εισαγωγής χρήστη</h1>
+                <h1>Φόρμα επεξεργασίας χρήστη</h1>
                 <form method="post" th:action="@{/edit/{id}(id=${user.userId})}" th:object="${user}">
                     <div class="form-group">
                         <label class="control-label" for="firstName">ID Χρήστη</label> <input
@@ -110,10 +110,43 @@
                             <option value="Ανενεργός">Ανενεργός</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <button class="btn btn-success" type="submit">Προσθήκη</button>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <button class="btn btn-success" type="submit">Αποθήκευση</button>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="form-group">
+                                <button class="btn btn-danger" data-target="#userDeleteModal" data-toggle="modal"
+                                        type="button">Διαγραφή χρήστη
+                                </button>
+                            </div>
+                        </div>
                     </div>
-
+                    <!-- Modal -->
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="userDeleteModal"
+                         role="dialog" tabindex="-1">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Επιβεβαίωση διαγραφής</h5>
+                                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Παρακαλώ επιβεβαιώστε την διαγραφή του χρήστη
+                                    <div th:text="${user.getFullName()}">Test</div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-dismiss="modal" type="button">Κλείσιμο
+                                    </button>
+                                    <button class="btn btn-danger" type="button">Επιβεβαίωση</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
