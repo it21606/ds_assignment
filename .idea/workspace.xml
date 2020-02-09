@@ -4,32 +4,33 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="Finished edit user page.`">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/listapplications.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/list-applications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="Added application parameters">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/faq.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/helpers/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/helpers/Helpers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/model/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/model/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/AddApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/AddApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/ApplicationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addapplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addapplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edituser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edituser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/list-users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/list-users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ds_assignment_hua.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/helpers/Helpers$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/helpers/Helpers$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/helpers/Helpers$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/helpers/Helpers$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/helpers/Helpers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/helpers/Helpers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/model/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/model/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/AddApplicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/AddApplicationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/ApplicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/ApplicationController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/addapplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/addapplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/edituser.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/edituser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/list-applications.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/list-applications.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/list-users.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/list-users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/profile.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +45,7 @@
         <option value="HTML File" />
         <option value="Arquillian JUnit Test Class" />
         <option value="JavaScript File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -92,7 +94,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -106,19 +108,18 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.distributedsystems.repository" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\templates" />
+      <recent name="C:\Users\user\Desktop\DS_Assignment\src\main\resources\templates" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\static\images" />
       <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\templates" />
       <recent name="C:\Users\user\Desktop\registration-login-springboot-security-thymeleaf-master\src\main\resources\static" />
       <recent name="C:\Users\user\Desktop\registration-login-springboot-security-thymeleaf-master\src\main\resources\templates" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Desktop\DS_Assignment\src\main\resources\static\js" />
-      <recent name="C:\Users\user\Desktop\DS_Assignment\src\main\resources\templates" />
-      <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -131,16 +132,6 @@
       <set>
         <option value="SpringBootApplicationConfigurationType" />
       </set>
-    </option>
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Application (1)">
@@ -176,28 +167,29 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ApplicationTests" />
-        <item itemvalue="JUnit.ApplicationTests" />
       </list>
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4eec9031" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4eec9031" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@9af175e0" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -233,8 +225,16 @@
       <workItem from="1575478030476" duration="1601000" />
       <workItem from="1575663911415" duration="4918000" />
       <workItem from="1575725648257" duration="4722000" />
-      <workItem from="1575805419612" duration="6885000" />
-      <workItem from="1581166620244" duration="10440000" />
+      <workItem from="1575805419612" duration="6998000" />
+      <workItem from="1575838617909" duration="1910000" />
+      <workItem from="1575996500564" duration="1718000" />
+      <workItem from="1577445380415" duration="2065000" />
+      <workItem from="1577626797934" duration="1144000" />
+      <workItem from="1577651435520" duration="130000" />
+      <workItem from="1577658778360" duration="148000" />
+      <workItem from="1577721471266" duration="81000" />
+      <workItem from="1580656404733" duration="222000" />
+      <workItem from="1581262136095" duration="3424000" />
     </task>
     <task id="LOCAL-00001" summary="Changed readme">
       <created>1574885033668</created>
@@ -313,7 +313,28 @@
       <option name="project" value="LOCAL" />
       <updated>1575730604220</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Finished edit user page.">
+      <created>1575820812656</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1575820812656</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added application parameters">
+      <created>1575842709237</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1575842709237</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added application parameters">
+      <created>1577658892518</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1577658892518</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,74 +367,145 @@
     <MESSAGE value="User list updated to tabulator" />
     <MESSAGE value="API changes and added edit user." />
     <MESSAGE value="Finished edit user page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished edit user page." />
+    <MESSAGE value="Added application parameters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added application parameters" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Assign_Data_Sources" />
-    <state x="552" y="178" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" />
-    <state x="552" y="178" key="#Deployment" />
-    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" />
-    <state x="552" y="178" key="#Updates" />
-    <state x="552" y="178" key="#Updates/0.0.1920.1040@0.0.1920.1040" />
-    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" />
-    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" />
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" />
-    <state x="578" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" />
-    <state x="578" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="707" y="243" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" />
-    <state x="707" y="243" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" />
-    <state x="580" y="114" key="CommitChangelistDialog2" />
-    <state x="580" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" />
-    <state width="433" height="466" key="DebuggerActiveHint" />
-    <state width="433" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" />
-    <state x="740" y="274" key="FileChooserDialogImpl" />
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1293" height="282" key="GridCell.Tab.1.bottom" />
-    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1293" height="282" key="GridCell.Tab.1.center" />
-    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1293" height="282" key="GridCell.Tab.1.left" />
-    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1293" height="282" key="GridCell.Tab.1.right" />
-    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1293" height="282" key="GridCell.Tab.2.bottom" />
-    <state width="1293" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1293" height="282" key="GridCell.Tab.2.center" />
-    <state width="1293" height="282" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1293" height="282" key="GridCell.Tab.2.left" />
-    <state width="1293" height="282" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" />
-    <state width="1293" height="282" key="GridCell.Tab.2.right" />
-    <state width="1293" height="282" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" />
-    <state x="490" y="174" key="Maven.ArtifactSearchDialog" />
-    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="672" y="235" key="MultipleFileMergeDialog" />
-    <state x="672" y="235" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" />
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" />
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" />
-    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" />
-    <state x="92" y="92" width="1736" height="856" key="dock-window-1" />
-    <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" />
-    <state x="92" y="92" width="1736" height="856" key="dock-window-2" />
-    <state x="92" y="92" width="1736" height="856" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" />
-    <state x="288" y="223" width="1736" height="856" key="dock-window-3" />
-    <state x="288" y="223" width="1736" height="856" key="dock-window-3/0.0.1920.1040@0.0.1920.1040" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" />
+    <state x="552" y="178" key="#Assign_Data_Sources" timestamp="1575820762788">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1575820762787" />
+    <state x="552" y="178" key="#Deployment" timestamp="1575820716231">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1575820716231" />
+    <state x="552" y="178" key="#Updates" timestamp="1575805456115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Updates/0.0.1920.1040@0.0.1920.1040" timestamp="1575805456115" />
+    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1575814767953">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575814767953" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1581264058445">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581264058445" />
+    <state x="155" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581264129850">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="155" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581264129850" />
+    <state x="707" y="243" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1575805572293">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="707" y="243" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1575805572293" />
+    <state x="580" y="114" key="CommitChangelistDialog2" timestamp="1581265670858">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="580" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581265670858" />
+    <state width="433" height="466" key="DebuggerActiveHint" timestamp="1575224622970">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="433" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1575224622970" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1577658927441">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577658927441" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1575805568399">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575805568399" />
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1581265650713">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581265650713" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1581265650713">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581265650713" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1581265650713">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581265650713" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1581265650713">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581265650713" />
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom" timestamp="1581265650713">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581265650713" />
+    <state width="1293" height="282" key="GridCell.Tab.1.center" timestamp="1581265650713">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581265650713" />
+    <state width="1293" height="282" key="GridCell.Tab.1.left" timestamp="1581265650713">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581265650713" />
+    <state width="1293" height="282" key="GridCell.Tab.1.right" timestamp="1581265650713">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581265650713" />
+    <state width="1293" height="282" key="GridCell.Tab.2.bottom" timestamp="1575997602038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575997602038" />
+    <state width="1293" height="282" key="GridCell.Tab.2.center" timestamp="1575997602038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575997602038" />
+    <state width="1293" height="282" key="GridCell.Tab.2.left" timestamp="1575997602038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575997602038" />
+    <state width="1293" height="282" key="GridCell.Tab.2.right" timestamp="1575997602038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="282" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575997602038" />
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1575815546294">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575815546294" />
+    <state x="672" y="235" key="MultipleFileMergeDialog" timestamp="1581262209605">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="235" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581262209605" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1581265631823">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581265631823" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1581262192418">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581262192418" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581262197379">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581262197379" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1575729207607">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1575729207607" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2" timestamp="1575729316892">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1575729316892" />
+    <state x="288" y="223" width="1736" height="856" key="dock-window-3" timestamp="1575729827642">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="288" y="223" width="1736" height="856" key="dock-window-3/0.0.1920.1040@0.0.1920.1040" timestamp="1575729827642" />
+    <state x="760" y="311" key="git4idea.merge.GitMergeDialog" timestamp="1581265645823">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="760" y="311" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581265645823" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1575385244994">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575385244994" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -439,14 +531,19 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/web/EditUserController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/service/UserServiceImpl.java</url>
           <line>111</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/web/ApplicationController.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationParametersServiceImpl.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
