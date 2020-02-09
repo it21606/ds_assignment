@@ -33,9 +33,8 @@
                 <div>
                     <ul class="nav navbar-nav ml-auto">
                         <li class="">
-                            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
-                               data-toggle="dropdown"
-                               href="#" id="userDropdown" role="button">
+                            <a aria-expanded="false" aria-haspopup="true" class="nav-link"
+                               data-toggle="dropdown" href="#" id="userDropdown" role="button">
                                 Συνδεδεμένος ως: <span sec:authentication="principal.username">User</span>
                             </a>
                             <!-- Dropdown - User Information -->
@@ -44,7 +43,7 @@
                                  sec:authorize="isAuthenticated()">
                                 <a class="dropdown-item" th:href="@{/logout}">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
+                                    Αποσύνδεση
                                 </a>
                             </div>
                         </li>
@@ -53,6 +52,7 @@
             </div>
         </nav>
         <h2>Λίστα αιτήσεων</h2>
+        <h5>Παρακαλώ επιλέξτε μια αίτηση από τη λίστα για να τον επεξεργαστείτε.</h5>
         <br>
         <div class="container-fluid">
             <div class="">

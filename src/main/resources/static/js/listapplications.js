@@ -5,7 +5,7 @@ $(document).ready(function () {
         headerFilterPlaceholder: "filter data...",
         columns: [
             {title: "Αριθμός αίτησης", field: "id", headerFilter: "input"},
-            {title: "Χρήστης", field: "user_info", headerFilter: "input"},
+            {title: "Χρήστης", field: "userInfo", headerFilter: "input"},
             {title: "Εισόδημα", field: "income", headerFilter: "input"},
             {title: "Άνεργοι γονείς", field: "bothParentsUnemployedDisplay", headerFilter: "input"},
             {title: "Έχει αδέρφια", field: "hasSiblingsDisplay", headerFilter: "input"},

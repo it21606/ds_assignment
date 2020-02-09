@@ -27,15 +27,14 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
 
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <button class="btn btn-info" id="sidebarCollapse" type="button">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div>
                     <ul class="nav navbar-nav ml-auto">
                         <li class="">
-                            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
-                               data-toggle="dropdown"
-                               href="#" id="userDropdown" role="button">
+                            <a aria-expanded="false" aria-haspopup="true" class="nav-link"
+                               data-toggle="dropdown" href="#" id="userDropdown" role="button">
                                 Συνδεδεμένος ως: <span sec:authentication="principal.username">User</span>
                             </a>
                             <!-- Dropdown - User Information -->
@@ -44,7 +43,7 @@
                                  sec:authorize="isAuthenticated()">
                                 <a class="dropdown-item" th:href="@{/logout}">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
+                                    Αποσύνδεση
                                 </a>
                             </div>
                         </li>
@@ -53,8 +52,15 @@
             </div>
         </nav>
         <h2>Λίστα χρηστών</h2>
+        <h5>Παρακαλώ επιλέξτε έναν χρήστη από τη λίστα για να τον επεξεργαστείτε.</h5>
         <br>
         <div class="container-fluid">
+            <div class="alert alert-success alert-dismissible fade show" role="alert" th:if="${param.userDeleted}">
+                Ο χρήστης διαγράφθηκε με επιτυχία.
+                <button aria-label="Close" class="close" data-dismiss="alert" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
             <div class="">
                 <div class="table-bordered" id="example" style="width:100%;"></div>
             </div>

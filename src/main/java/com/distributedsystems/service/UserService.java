@@ -14,6 +14,8 @@ public interface UserService extends UserDetailsService {
 
     User findById(long id);
 
+    void deleteById(long id);
+
     UserViewModel findByIdUserViewModel(long id);
 
     List<UserViewModel> findAll();

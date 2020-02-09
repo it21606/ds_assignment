@@ -30,6 +30,21 @@ public class EditUserController {
         return modelAndView;
     }
 
+
+    @RequestMapping(value = "/deleteUser/{id}", method = RequestMethod.POST)
+    public ModelAndView deleteUser(@PathVariable Long id) {
+        ModelAndView modelAndView = new ModelAndView();
+        if (id != null) {
+            _userService.deleteById(id);
+            modelAndView.setViewName("redirect:/listusers?userDeleted");
+            return modelAndView;
+        } else {
+            modelAndView.setViewName("redirect:/edituser/" + id + "?userDeleted");
+            return modelAndView;
+        }
+    }
+
+
     @PostMapping("/{id}")
     public ModelAndView editUserAction(@ModelAttribute("user") UserViewModel user, HttpServletRequest request, @PathVariable Long id,
                                        BindingResult bindingResult) throws Exception {

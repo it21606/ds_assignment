@@ -68,6 +68,14 @@ public class UserServiceImpl implements UserService {
         return user;
     }
 
+    public void deleteById(long id) {
+        User user = findById(id);
+        ArrayList<Role> nullList = new ArrayList<>();
+        user.setRoles(nullList);
+        userRepository.save(user);
+        userRepository.deleteById(id);
+    }
+
 
     public User save(UserRegistrationDto registration) {
         User user = new User();

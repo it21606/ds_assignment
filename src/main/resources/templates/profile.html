@@ -24,23 +24,23 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
 
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <button class="btn btn-info" id="sidebarCollapse" type="button">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div>
                     <ul class="nav navbar-nav ml-auto">
                         <li class="">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a aria-expanded="false" aria-haspopup="true" class="nav-link"
+                               data-toggle="dropdown" href="#" id="userDropdown" role="button">
                                 Συνδεδεμένος ως: <span sec:authentication="principal.username">User</span>
                             </a>
                             <!-- Dropdown - User Information -->
-                            <div sec:authorize="isAuthenticated()"
+                            <div aria-labelledby="userDropdown"
                                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                 aria-labelledby="userDropdown">
-                                <a th:href="@{/logout}" class="dropdown-item">
+                                 sec:authorize="isAuthenticated()">
+                                <a class="dropdown-item" th:href="@{/logout}">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
+                                    Αποσύνδεση
                                 </a>
                             </div>
                         </li>
