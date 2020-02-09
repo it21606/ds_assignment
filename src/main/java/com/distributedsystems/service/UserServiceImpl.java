@@ -6,6 +6,7 @@ import com.distributedsystems.model.User;
 import com.distributedsystems.repository.RoleRepository;
 import com.distributedsystems.repository.UserRepository;
 import com.distributedsystems.web.dto.UserRegistrationDto;
+import com.distributedsystems.web.viewmodel.ChangePasswordViewModel;
 import com.distributedsystems.web.viewmodel.UserViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -74,6 +75,8 @@ public class UserServiceImpl implements UserService {
         user.setLastName(registration.getLastName());
         user.setEmail(registration.getEmail());
         user.setPassword(passwordEncoder.encode(registration.getPassword()));
+        passwordEncoder.encode(registration.getPassword());
+
         user.setCategory(registration.getCategory());
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         user.setMemberSince(sdf.format(timestamp));
@@ -159,6 +162,26 @@ public class UserServiceImpl implements UserService {
             userViewModel.setStatus(Helpers.userStatusMap.get(user.getStatus()));
         }
         return userViewModel;
+    }
+
+    public boolean changePassword(ChangePasswordViewModel cpViewModel, String username) {
+        User currentUser = findByEmail(username);
+        if (currentUser != null) {
+            boolean isOldPasswordCorrect = passwordEncoder.matches(cpViewModel.getOldPassword(), currentUser.getPassword());
+            if (isOldPasswordCorrect) {
+                if (cpViewModel.getNewPassword().equals(cpViewModel.getNewPasswordConfirm())) {
+                    currentUser.setPassword(passwordEncoder.encode(cpViewModel.getNewPassword()));
+                    userRepository.save(currentUser);
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
     }
 
     //endregion

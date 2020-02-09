@@ -2,6 +2,7 @@ package com.distributedsystems.service;
 
 import com.distributedsystems.model.User;
 import com.distributedsystems.web.dto.UserRegistrationDto;
+import com.distributedsystems.web.viewmodel.ChangePasswordViewModel;
 import com.distributedsystems.web.viewmodel.UserViewModel;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
@@ -22,4 +23,6 @@ public interface UserService extends UserDetailsService {
     UserViewModel Map(User user);
 
     User update(UserViewModel user);
+
+    boolean changePassword(ChangePasswordViewModel cpViewModel, String username);
 }
