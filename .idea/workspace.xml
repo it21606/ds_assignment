@@ -4,10 +4,13 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="Many fixes.">
+    <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/EditApplicationController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/viewmodel/ApplicationViewModel.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/templates/editapplication.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/EditApplicationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/viewmodel/ApplicationViewModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/editapplication.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/helpers/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/helpers/Helpers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/model/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/model/Application.java" afterDir="false" />
@@ -237,7 +240,7 @@
       <workItem from="1581166620244" duration="10520000" />
       <workItem from="1581498588752" duration="2203000" />
       <workItem from="1581516372967" duration="214000" />
-      <workItem from="1582129279401" duration="2191000" />
+      <workItem from="1582129279401" duration="2253000" />
     </task>
     <task id="LOCAL-00001" summary="Changed readme">
       <created>1574885033668</created>
@@ -323,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581184059013</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Many fixes.">
+      <created>1582131527995</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1582131527995</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
