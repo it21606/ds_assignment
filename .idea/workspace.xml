@@ -5,28 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/EditApplicationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/viewmodel/ApplicationViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/editapplication.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/EditApplicationController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/viewmodel/ApplicationViewModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/editapplication.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/helpers/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/helpers/Helpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/config/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/model/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/model/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/listapplications.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/listapplications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edituser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edituser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/EditApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/EditApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editapplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editapplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/config/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/config/SecurityConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/model/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/model/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/ApplicationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/ApplicationService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/ApplicationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/ApplicationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/listapplications.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/listapplications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/edituser.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/edituser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parameters.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parameters.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/EditApplicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/web/EditApplicationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/editapplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/editapplication.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -197,6 +186,11 @@
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@56bd33a2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@ba31aeec" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@56bd33a2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5f844bd2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
           </expand>
           <select />
         </treeState>
@@ -240,7 +234,7 @@
       <workItem from="1581166620244" duration="10520000" />
       <workItem from="1581498588752" duration="2203000" />
       <workItem from="1581516372967" duration="214000" />
-      <workItem from="1582129279401" duration="2253000" />
+      <workItem from="1582129279401" duration="5024000" />
     </task>
     <task id="LOCAL-00001" summary="Changed readme">
       <created>1574885033668</created>
@@ -333,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582131527995</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Many fixes.">
+      <created>1582132057811</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582132057811</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +470,17 @@
           <line>47</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((User)((UsernamePasswordAuthenticationToken)authentication).principal).username" custom="org.springframework.security.authentication.UsernamePasswordAuthenticationToken,org.springframework.security.core.userdetails.User" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

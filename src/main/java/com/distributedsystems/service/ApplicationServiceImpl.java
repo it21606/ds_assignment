@@ -1,5 +1,6 @@
 package com.distributedsystems.service;
 
+import com.distributedsystems.helpers.Helpers;
 import com.distributedsystems.model.Application;
 import com.distributedsystems.repository.ApplicationRepository;
 import com.distributedsystems.web.viewmodel.ApplicationViewModel;
@@ -32,14 +33,7 @@ public class ApplicationServiceImpl implements ApplicationService {
     public Application update(ApplicationViewModel applicationViewModel) {
         if (applicationViewModel != null) {
             Application application = findById(applicationViewModel.getId());
-            application.setUserId(applicationViewModel.getUserId());
-            application.setId(applicationViewModel.getId());
-            application.setBothParentsUnemployedDisplay(applicationViewModel.getBothParentsUnemployedDisplay());
-            application.setStatusDisplay(applicationViewModel.getStatusDisplay());
-            application.setHasSiblingsDisplay(applicationViewModel.getHasSiblingsDisplay());
-            application.setCollectedPoints(applicationViewModel.getCollectedPoints());
-            application.setIncome(applicationViewModel.getIncome());
-            application.setHasSiblingsInOtherCitiesDisplay(applicationViewModel.getHasSiblingsInOtherCitiesDisplay());
+            application.setStatus(Helpers.statusStatusMap.get(applicationViewModel.getStatusDisplay()));
             return _applicationRepository.save(application);
         }
         return new Application();

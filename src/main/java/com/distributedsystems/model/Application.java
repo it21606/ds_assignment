@@ -87,10 +87,6 @@ public class Application implements Serializable {
         this.status = status;
         this.collectedPoints = collectedPoints;
         this.submissionPeriod = submissionPeriod;
-        this.statusDisplay = statusDisplay;
-        this.bothParentsUnemployedDisplay = bothParentsUnemployedDisplay;
-        this.hasSiblingsDisplay = hasSiblingsDisplay;
-        this.hasSiblingsInOtherCitiesDisplay = hasSiblingsInOtherCitiesDisplay;
     }
 
     public int getId() {

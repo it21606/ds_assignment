@@ -64,7 +64,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <h1>Φόρμα επεξεργασίας χρήστη</h1>
+                <h1>Φόρμα επεξεργασίας αίτησης</h1>
                 <form th:object="${applicationModel}">
                     <div class="form-group">
                         <label class="control-label" for="firstName">ID Χρήστη</label> <input
@@ -80,7 +80,26 @@
                             class="form-control" disabled id="firstName" th:value="*{income}"/>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="lastName">Επίθετο</label> <input
+                        <label class="control-label" for="bothParentsUnemp">Είναι και οι 2 γονείς άνεργοι</label> <input
+                            class="form-control" disabled id="bothParentsUnemp"
+                            th:value="*{bothParentsUnemployedDisplay}"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="hasSiblings">Έχει αδέρφια</label> <input
+                            class="form-control" disabled id="hasSiblings" th:value="*{hasSiblingsDisplay}"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="hasSiblingsInOtherCities">Έχει αδέρφια σε άλλες πόλεις</label>
+                        <input
+                                class="form-control" disabled id="hasSiblingsInOtherCities"
+                                th:value="*{hasSiblingsInOtherCitiesDisplay}"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="points">Βαθμοί</label> <input
+                            class="form-control" disabled id="points" th:value="*{collectedPoints}"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="lastName">Κατάσταση</label> <input
                             class="form-control" disabled id="lastName" th:value="*{statusDisplay}"/>
                     </div>
                     <div class="row">

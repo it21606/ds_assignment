@@ -27,7 +27,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("classpath:/static/**",
                         "/webjars/**").permitAll()
                 .anyRequest().authenticated()
-                .antMatchers("/listusers").access("hasRole('ROLE_ADMIN')")
+                .antMatchers("/listusers").access("hasAuthority('ROLE_ADMIN')")
+                .antMatchers("/listapplications").access("hasAuthority('ROLE_ADMIN')")
+                .antMatchers("/edit/**").access("hasAuthority('ROLE_ADMIN')")
                 .antMatchers("/adduser").access("hasRole('ROLE_ADMIN')")
                 .and()
                     .formLogin()

@@ -67,18 +67,17 @@ public class EditApplicationController {
 //        }
 //    }
     public ApplicationViewModel Map(Application application) {
-        ApplicationViewModel applicationViewModel = new ApplicationViewModel(application.getUserId(), application.getUserInfo(), application.getIncome(), application.getCollectedPoints(), application.getStatusDisplay(), application.getBothParentsUnemployedDisplay(),
-                application.getHasSiblingsDisplay(), application.getHasSiblingsInOtherCitiesDisplay(), application.getSubmissionPeriod());
+        ApplicationViewModel applicationViewModel = new ApplicationViewModel();
         if (application != null) {
             applicationViewModel.setUserId(application.getUserId());
             applicationViewModel.setUserInfo(application.getUserInfo());
             applicationViewModel.setId(application.getId());
-            applicationViewModel.setBothParentsUnemployedDisplay(application.getBothParentsUnemployedDisplay());
-            applicationViewModel.setStatusDisplay(Helpers.statusStatusMap.get(application.getStatusDisplay()));
-            applicationViewModel.setHasSiblingsDisplay(application.getHasSiblingsDisplay());
+            applicationViewModel.setBothParentsUnemployedDisplay(Helpers.booleanStatusMap.get(application.isBothParentsUnemployed()));
+            applicationViewModel.setStatusDisplay(Helpers.statusStatusMap.get(application.getStatus()));
+            applicationViewModel.setHasSiblingsDisplay(Helpers.booleanStatusMap.get(application.isHasSiblings()));
             applicationViewModel.setCollectedPoints(application.getCollectedPoints());
             applicationViewModel.setIncome(application.getIncome());
-            applicationViewModel.setHasSiblingsInOtherCitiesDisplay(application.getHasSiblingsInOtherCitiesDisplay());
+            applicationViewModel.setHasSiblingsInOtherCitiesDisplay(Helpers.booleanStatusMap.get(application.isHasSiblingsInOtherCities()));
         }
         return applicationViewModel;
     }
