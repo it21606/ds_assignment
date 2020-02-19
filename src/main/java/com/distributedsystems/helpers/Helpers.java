@@ -16,9 +16,8 @@ public class Helpers {
         userStatusMap.put("Ανενεργός", "DISABLED");
     }
 
-    public static Map<String, String> statusStatusMap;
-    public static Map<Boolean, String> booleanStatusMap;
 
+    public static Map<String, String> statusStatusMap;
     static {
         statusStatusMap = new HashMap() {
         };
@@ -30,6 +29,7 @@ public class Helpers {
         statusStatusMap.put("Απορριφθήσα", "REJECTED");
     }
 
+    public static Map<Boolean, String> booleanStatusMap;
     static {
         booleanStatusMap = new HashMap() {
         };

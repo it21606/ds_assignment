@@ -65,56 +65,23 @@
                     </button>
                 </div>
                 <h1>Φόρμα επεξεργασίας χρήστη</h1>
-                <form method="post" th:action="@{/edit/{id}(id=${user.userId})}" th:object="${user}">
+                <form th:object="${applicationModel}">
                     <div class="form-group">
                         <label class="control-label" for="firstName">ID Χρήστη</label> <input
-                            class="form-control" disabled id="userId" th:field="*{userId}" th:value="*{userId}"/>
+                            class="form-control" disabled id="userId" th:value="*{userId}"/>
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label" for="fullName">Πλήρες όνομα</label> <input
-                            class="form-control" disabled id="fullName" th:field="*{fullName}"/>
+                        <label class="control-label" for="userInfo">Πλήρες όνομα</label> <input
+                            class="form-control" disabled id="userInfo" th:value="*{userInfo}"/>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="firstName">Όνομα</label> <input
-                            class="form-control" id="firstName" th:field="*{firstName}"/>
+                        <label class="control-label" for="firstName">Εισόδημα</label> <input
+                            class="form-control" disabled id="firstName" th:value="*{income}"/>
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="lastName">Επίθετο</label> <input
-                            class="form-control" id="lastName" th:field="*{lastName}"/>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label" for="email">E-mail</label> <input
-                            class="form-control" id="email" th:field="*{email}"/>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label" for="phoneNumber">Αριθμός τηλεφώνου
-                        </label> <input class="form-control" id="phoneNumber"
-                                        th:field="*{phoneNumber}"/>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label" for="category">Κατηγορία</label>
-                        <select class="form-control" id="category" th:field="*{category}" th:value="*{category}">
-                            <option value=""></option>
-                            <option value="Διοικητικός Υπάλληλος">Διοικητικός Υπάλληλος</option>
-                            <option value="Τμήμα Πληροφορικής και Τηλεματικής">Τμήμα Πληροφορικής και Τηλεματικής
-                            </option>
-                            <option value="Τμήμα Γεωγραφίας">Τμήμα Γεωγραφίας</option>
-                            <option value="Τμήμα Επιστήμης Διαιτολογίας-Διατροφή">Τμήμα Επιστήμης
-                                Διαιτολογίας-Διατροφής
-                            </option>
-                            <option value="Τμήμα Οικιακής Οικονομίας και Οικολογίας">Τμήμα Οικιακής Οικονομίας και
-                                Οικολογίας
-                            </option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label" for="category">Κατάσταση</label>
-                        <select class="form-control" id="status" th:field="*{status}" th:value="*{status}">
-                            <option value=""></option>
-                            <option value="Ενεργός">Ενεργός</option>
-                            <option value="Ανενεργός">Ανενεργός</option>
-                        </select>
+                            class="form-control" disabled id="lastName" th:value="*{statusDisplay}"/>
                     </div>
                     <div class="row">
                         <div class="col-md-2">
@@ -144,13 +111,12 @@
                             </div>
                             <div class="modal-body">
                                 Παρακαλώ επιβεβαιώστε την διαγραφή του χρήστη
-                                <div th:text="${user.getFullName()}">Test</div>
+                                <div>Test</div>
                             </div>
                             <div class="modal-footer">
                                 <button class="btn btn-secondary" data-dismiss="modal" type="button">Κλείσιμο
                                 </button>
-                                <form method="get" th:action="@{/edit/deleteUser/{id}(id=${user.userId})}"
-                                      th:method="deleteUser">
+                                <form method="get">
                                     <button class="btn btn-danger" type="submit">Επιβεβαίωση</button>
                                 </form>
                             </div>

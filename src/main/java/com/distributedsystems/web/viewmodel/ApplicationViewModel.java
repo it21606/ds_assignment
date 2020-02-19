@@ -1,54 +1,18 @@
-package com.distributedsystems.model;
+package com.distributedsystems.web.viewmodel;
 
-import javax.persistence.*;
-import java.io.Serializable;
-
+public class ApplicationViewModel {
 
 
-
-@Entity
-@Table(name = "applications")
-public class Application implements Serializable {
-
-    /**
-     *
-     */
-    private static final long serialVersionUID = 4310661683443846471L;
-
-    /**
-     *
-     */
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "application_id")
     private int id;
 
-    @Column(name = "user_id")
     private long userId;
 
-    @Column(name = "user_info")
     private String userInfo;
 
-    @Column(name = "income")
     private long income;
 
-    @Column(name = "bothParentsUnemployed")
-    private boolean bothParentsUnemployed;
-
-    @Column(name = "hasSiblings")
-    private boolean hasSiblings;
-
-    @Column(name = "hasSiblingsInOtherCities")
-    private boolean hasSiblingsInOtherCities;
-
-    @Column(name = "status")
-    private String status;
-
-    @Column(name = "collected_points")
     private Long collectedPoints;
 
-    @Column(name = "submission_period")
     private String submissionPeriod;
 
     private String statusDisplay;
@@ -59,32 +23,23 @@ public class Application implements Serializable {
 
     private String hasSiblingsInOtherCitiesDisplay;
 
-    public Application() {
+    public ApplicationViewModel() {
 
     }
 
-    public Application(long userId, long income, boolean bothParentsUnemployed, boolean hasSiblings, boolean hasSiblingsInOtherCities,
-                       String status, Long collectedPoints, String submissionPeriod) {
+    public ApplicationViewModel(long userId, long income, Long collectedPoints, String submissionPeriod) {
         super();
         this.userId = userId;
         this.income = income;
-        this.bothParentsUnemployed = bothParentsUnemployed;
-        this.hasSiblings = hasSiblings;
-        this.hasSiblingsInOtherCities = hasSiblingsInOtherCities;
-        this.status = status;
         this.collectedPoints = collectedPoints;
         this.submissionPeriod = submissionPeriod;
     }
 
-    public Application(long userId, String user_info, long income, boolean bothParentsUnemployed, boolean hasSiblings, boolean hasSiblingsInOtherCities, String status, Long collectedPoints, String statusDisplay,
-                       String bothParentsUnemployedDisplay, String hasSiblingsDisplay, String hasSiblingsInOtherCitiesDisplay, String submissionPeriod) {
+    public ApplicationViewModel(long userId, String user_info, long income, Long collectedPoints, String statusDisplay,
+                                String bothParentsUnemployedDisplay, String hasSiblingsDisplay, String hasSiblingsInOtherCitiesDisplay, String submissionPeriod) {
         this.userId = userId;
         this.userInfo = user_info;
         this.income = income;
-        this.bothParentsUnemployed = bothParentsUnemployed;
-        this.hasSiblings = hasSiblings;
-        this.hasSiblingsInOtherCities = hasSiblingsInOtherCities;
-        this.status = status;
         this.collectedPoints = collectedPoints;
         this.submissionPeriod = submissionPeriod;
         this.statusDisplay = statusDisplay;
@@ -115,38 +70,6 @@ public class Application implements Serializable {
 
     public void setIncome(long income) {
         this.income = income;
-    }
-
-    public boolean isBothParentsUnemployed() {
-        return bothParentsUnemployed;
-    }
-
-    public void setBothParentsUnemployed(boolean bothParentsUnemployed) {
-        this.bothParentsUnemployed = bothParentsUnemployed;
-    }
-
-    public boolean isHasSiblings() {
-        return hasSiblings;
-    }
-
-    public void setHasSiblings(boolean hasSiblings) {
-        this.hasSiblings = hasSiblings;
-    }
-
-    public boolean isHasSiblingsInOtherCities() {
-        return hasSiblingsInOtherCities;
-    }
-
-    public void setHasSiblingsInOtherCities(boolean hasSiblingsInOtherCities) {
-        this.hasSiblingsInOtherCities = hasSiblingsInOtherCities;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
     }
 
     public String getUserInfo() {
@@ -220,10 +143,6 @@ public class Application implements Serializable {
                 ", user_id=" + userId +
                 ", user_info='" + userInfo + '\'' +
                 ", income=" + income +
-                ", bothParentsUnemployed=" + bothParentsUnemployed +
-                ", hasSiblings=" + hasSiblings +
-                ", hasSiblingsInOtherCities=" + hasSiblingsInOtherCities +
-                ", status='" + status + '\'' +
                 ", collectedPoints=" + collectedPoints +
                 ", submissionPeriod='" + submissionPeriod + '\'' +
                 '}';

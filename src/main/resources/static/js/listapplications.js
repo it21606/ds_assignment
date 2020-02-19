@@ -21,7 +21,7 @@ $(document).ready(function () {
         rowSelected: function (e, row) {
             let selectedRows = this.getSelectedData();
             console.log(selectedRows[0].user_id);
-            let url = "/edit/" + selectedRows[0].user_id;
+            let url = "/edit/application/" + selectedRows[0].id;
             window.open(url);
         },
     });
