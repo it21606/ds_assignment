@@ -4,11 +4,9 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="Added my applications">
+    <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listmyapplications.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listmyapplications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/repository/ApplicationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/repository/ApplicationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/ApplicationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/ApplicationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/listmyapplications.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/listmyapplications.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +30,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="κον" />
         <option value="Konstantinos Vaismenos &lt;it21606@hua.gr&gt;" />
       </list>
     </option>
@@ -223,7 +222,7 @@
       <workItem from="1581498588752" duration="2203000" />
       <workItem from="1581516372967" duration="214000" />
       <workItem from="1582129279401" duration="5254000" />
-      <workItem from="1582196237519" duration="3077000" />
+      <workItem from="1582196237519" duration="3162000" />
     </task>
     <task id="LOCAL-00001" summary="Changed readme">
       <created>1574885033668</created>
@@ -344,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582199708502</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added my applications">
+      <created>1582199828935</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1582199828935</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
