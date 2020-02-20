@@ -27,7 +27,7 @@
                         <a th:href="@{/addapplication}">Υποβολή αίτησης</a>
                     </li>
                     <li sec:authorize="hasRole('ROLE_USER')">
-                        <a href="#">Οι αιτήσεις μου</a>
+                        <a th:href="@{/listmyapplications}">Οι αιτήσεις μου</a>
                     </li>
                 </ul>
             </li>

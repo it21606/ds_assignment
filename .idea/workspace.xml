@@ -4,17 +4,11 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/listmyapplications.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/listmyapplications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/repository/ApplicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/repository/ApplicationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/ApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+    <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="Added my applications">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listmyapplications.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listmyapplications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/repository/ApplicationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/repository/ApplicationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/ApplicationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/distributedsystems/service/ApplicationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +223,7 @@
       <workItem from="1581498588752" duration="2203000" />
       <workItem from="1581516372967" duration="214000" />
       <workItem from="1582129279401" duration="5254000" />
-      <workItem from="1582196237519" duration="2918000" />
+      <workItem from="1582196237519" duration="3077000" />
     </task>
     <task id="LOCAL-00001" summary="Changed readme">
       <created>1574885033668</created>
@@ -343,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582198151324</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added my applications">
+      <created>1582199708502</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1582199708502</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +378,8 @@
     <MESSAGE value="API changes and added edit user." />
     <MESSAGE value="Finished edit user page." />
     <MESSAGE value="Many fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Many fixes." />
+    <MESSAGE value="Added my applications" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added my applications" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
