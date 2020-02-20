@@ -1,7 +1,9 @@
 package com.distributedsystems.web;
 
 import com.distributedsystems.model.Application;
+import com.distributedsystems.model.ApplicationParameters;
 import com.distributedsystems.model.User;
+import com.distributedsystems.service.ApplicationParametersService;
 import com.distributedsystems.service.ApplicationService;
 import com.distributedsystems.service.UserService;
 import org.springframework.security.core.Authentication;
@@ -20,10 +22,12 @@ public class AddApplicationController {
 
     private final ApplicationService _applicationService;
     private final UserService _userService;
+    private final ApplicationParametersService _appParaService;
 
-    public AddApplicationController(ApplicationService applicationService, UserService userService) {
+    public AddApplicationController(ApplicationService applicationService, UserService userService, ApplicationParametersService appParaService) {
         _applicationService = applicationService;
         _userService = userService;
+        this._appParaService = appParaService;
     }
 
     @ModelAttribute("newapplication")
@@ -43,8 +47,27 @@ public class AddApplicationController {
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         User currentUser = _userService.findByEmail(authentication.getName());
+        ApplicationParameters params = _appParaService.getParameters();
         application.setUserId(currentUser.getId());
-        application.setStatus("PENDING");
+        long points = 0;
+        if (application.getIncome() == 0 && application.isBothParentsUnemployed()) {
+            application.setStatus("APPROVED");
+        } else {
+            application.setStatus("PENDING");
+        }
+        if (application.getIncome() <= 10000) {
+            points = 100;
+        } else if (application.getIncome() > 10000 && application.getIncome() <= 15000) {
+            points = 30;
+        }
+        if (application.isHasSiblings()) {
+            points = points + 20;
+        }
+        if (application.isHasSiblingsInOtherCities()) {
+            points = points + 50;
+        }
+        application.setCollectedPoints(points);
+        application.setSubmissionPeriod(params.getCurrentPeriod());
         application.setUserInfo(currentUser.getFirstName() + " " + currentUser.getLastName());
         _applicationService.save(application);
         System.out.print("Application : " + application);

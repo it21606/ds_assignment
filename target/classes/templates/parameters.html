@@ -58,19 +58,20 @@
                     </button>
                 </div>
 
-                <h1>Φόρμα εισαγωγής χρήστη</h1>
+                <h1>Παράμετροι εφαρμογής</h1>
                 <form method="post" th:object="${parameters}">
                     <div class="form-group">
-                        <label class="control-label" for="fullName">Πλήρες όνομα</label> <input
-                            class="form-control" disabled id="applicationsEnabled" th:field="*{applicationsEnabled}"
+                        <br>
+                        <label class="control-label" for="fullName">Είναι ενεργοποιημένες οι αιτήσεις;</label> <input
+                            class="" id="applicationsEnabled" th:field="*{applicationsEnabled}"
                             th:value="*{applicationsEnabled}" type="checkbox"/>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="fullName">Πλήρες όνομα</label> <input
-                            class="form-control" disabled id="fullName" th:field="*{currentPeriod}"/>
+                        <label class="control-label" for="fullName">Τρέχουσα περίοδος</label> <input
+                            class="form-control" id="fullName" th:field="*{currentPeriod}"/>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="firstName">Όνομα</label> <input
+                        <label class="control-label" for="firstName">Μέγιστος αριθμός δικαιούχων</label> <input
                             class="form-control" id="firstName" th:field="*{maxApplicants}"/>
                     </div>
                     <div class="form-group">
