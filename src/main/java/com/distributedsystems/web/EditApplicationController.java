@@ -31,11 +31,11 @@ public class EditApplicationController {
     }
 
 
-//    @RequestMapping(value = "/deleteUser/{id}", method = RequestMethod.POST)
+//    @RequestMapping(value = "/acceptApplication/{id}", method = RequestMethod.POST)
 //    public ModelAndView deleteUser(@PathVariable Long id) {
 //        ModelAndView modelAndView = new ModelAndView();
 //        if (id != null) {
-//            _userService.deleteById(id);
+//            _applicationService.(id);
 //            modelAndView.setViewName("redirect:/listusers?userDeleted");
 //            return modelAndView;
 //        } else {
