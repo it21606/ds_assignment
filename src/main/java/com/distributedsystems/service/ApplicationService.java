@@ -14,5 +14,7 @@ public interface ApplicationService {
 
     Application update(ApplicationViewModel applicationViewModel);
 
+    List<Application> findByUserId(long id);
+
     List<Application> findAll();
 }

@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7809897b-cc98-4622-ac53-e43df4382cf3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/listmyapplications.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/listmyapplications.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/EditApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/EditApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/repository/ApplicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/repository/ApplicationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/service/ApplicationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/ApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +79,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -86,23 +93,23 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.distributedsystems.repository" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\static\images" />
-      <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\templates" />
-      <recent name="C:\Users\user\Desktop\registration-login-springboot-security-thymeleaf-master\src\main\resources\static" />
-      <recent name="C:\Users\user\Desktop\registration-login-springboot-security-thymeleaf-master\src\main\resources\templates" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.distributedsystems.web.viewmodel" />
       <recent name="com.distributedsystems.web" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Desktop\DS_Assignment\src\main\resources\templates" />
       <recent name="C:\Users\user\Desktop\DS_Assignment\src\main\resources\static\js" />
+      <recent name="C:\Users\user\Desktop\DS_Assignment\src\main\resources\templates" />
       <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\templates" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\static\images" />
+      <recent name="C:\Users\user\Desktop\ds_assignment\src\main\resources\templates" />
+      <recent name="C:\Users\user\Desktop\registration-login-springboot-security-thymeleaf-master\src\main\resources\static" />
+      <recent name="C:\Users\user\Desktop\registration-login-springboot-security-thymeleaf-master\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -222,7 +229,7 @@
       <workItem from="1581498588752" duration="2203000" />
       <workItem from="1581516372967" duration="214000" />
       <workItem from="1582129279401" duration="5254000" />
-      <workItem from="1582196237519" duration="1810000" />
+      <workItem from="1582196237519" duration="2918000" />
     </task>
     <task id="LOCAL-00001" summary="Changed readme">
       <created>1574885033668</created>
@@ -329,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582134940862</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Many fixes.">
+      <created>1582198151324</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1582198151324</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,12 +476,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/web/ApplicationController.java</url>
-          <line>47</line>
+          <line>77</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/distributedsystems/web/MainController.java</url>
-          <line>64</line>
+          <line>69</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>

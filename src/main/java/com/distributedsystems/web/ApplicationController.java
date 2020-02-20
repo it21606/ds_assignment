@@ -6,6 +6,8 @@ import com.distributedsystems.model.User;
 import com.distributedsystems.service.ApplicationService;
 import com.distributedsystems.service.UserService;
 import org.springframework.http.MediaType;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -38,6 +40,34 @@ public class ApplicationController {
         return application;
 
     }
+
+    @RequestMapping(value = "/my", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
+    public List<Application> listMyApplications() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        User user = _userService.findByEmail(authentication.getName());
+        List<Application> applications = _applicationService.findByUserId(user.getId());
+
+        for (Application application : applications
+        ) {
+            if (application.getStatus() != null) {
+                String displayStatus = Helpers.statusStatusMap.get(application.getStatus());
+                application.setStatusDisplay(displayStatus);
+            }
+            String bothParents = Helpers.booleanStatusMap.get(application.isBothParentsUnemployed());
+            application.setBothParentsUnemployedDisplay(bothParents);
+
+            String hasSiblings = Helpers.booleanStatusMap.get(application.isHasSiblings());
+            application.setHasSiblingsDisplay(hasSiblings);
+
+            String otherCities = Helpers.booleanStatusMap.get(application.isHasSiblingsInOtherCities());
+            application.setHasSiblingsInOtherCitiesDisplay(otherCities);
+
+        }
+        System.out.print("Application : " + applications);
+        return applications;
+
+    }
+
 
     @RequestMapping(value = "/all", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
     public List<Application> listApplications() {

@@ -40,6 +40,11 @@ public class MainController {
         return "list-applications";
     }
 
+    @GetMapping("/listmyapplications")
+    public String listmyApplications() {
+        return "listmyapplications";
+    }
+
     @GetMapping("/faq")
     public String getFaq() {
         return "faq";

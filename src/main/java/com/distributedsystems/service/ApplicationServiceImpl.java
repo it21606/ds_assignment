@@ -22,6 +22,10 @@ public class ApplicationServiceImpl implements ApplicationService {
         return _applicationRepository.findById(id);
     }
 
+    public List<Application> findByUserId(long userid) {
+        return _applicationRepository.findByUserId(userid);
+    }
+
     public Application save(Application application) {
         if (application != null) {
             return _applicationRepository.save(application);

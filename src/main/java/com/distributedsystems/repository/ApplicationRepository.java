@@ -1,7 +1,6 @@
 package com.distributedsystems.repository;
 
 import com.distributedsystems.model.Application;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -13,6 +12,8 @@ public interface ApplicationRepository extends JpaRepository<Application, Long> 
 
    //region Basic CRUD operations
     Application findById(int id);
+
+    List<Application> findByUserId(long userid);
 
     List<Application> findAll();
    //endregion
